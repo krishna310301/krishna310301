@@ -144,7 +144,6 @@ Production-style AWS infrastructure built entirely with **Terraform IaC** — ze
 - Configured **CloudWatch CPU monitoring** with automated alerting for observability
 - Built **GitHub Actions CI/CD** to validate Terraform plans on every commit, preventing misconfigurations
 
-> **Why it matters:** Practical Cloud Engineer I skills — provisioning, IAM, networking, monitoring, and infrastructure automation end-to-end.
 
 ---
 
@@ -163,7 +162,6 @@ Scalable cloud-native microservices platform processing **350+ headlines from 18
 - Containerized all services with Docker + automated CI/CD via **Cloud Build**
 - **60% faster** ingestion via parallel pipeline · RESTful API with **JWT auth and RBAC**
 
-> **Why it matters:** Cloud-native deployment, containerization, event-driven design, and managed GCP services working together at scale.
 
 ---
 
@@ -180,8 +178,6 @@ Full-stack AI app powered by the Claude API with production-grade deployment rel
 - Containerized with **docker-compose** + GitHub Actions CI/CD deploying to Vercel & Render
 - Infrastructure-level **rate limiting and input validation** ensuring production API stability
 
-> **Why it matters:** Cloud deployment, containerization, API reliability, and AI-enabled infrastructure in one project.
-
 ---
 
 ### 🔭 In Progress: AI-Powered Infrastructure Monitor
@@ -197,8 +193,6 @@ Combining network ops instincts with serverless automation and AI-assisted incid
 - **CloudWatch** detects infrastructure anomalies → **Lambda** processes alarm context
 - **AWS Bedrock** generates a first-level RCA summary and recommended fix
 - **SNS** delivers the incident summary as an actionable notification
-
-> **Why it matters:** Bridges network operations background with cloud monitoring, serverless automation, and AI-driven incident response — exactly what cloud ops teams need.
 
 ---
 
