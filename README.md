@@ -4,7 +4,7 @@
 
 ### Cloud & Infrastructure Engineer
 
-> 🟢 **Open to** · Cloud Engineer I · Cloud Operations · Infrastructure Engineer · Junior DevOps · Cloud-Network Hybrid
+> 🟢 **Open to** · Cloud Engineer I · Cloud Infrastructure Engineer · Cloud Operations · Junior DevOps · Cloud-Network Hybrid · Infrastructure / Production Support
 
 <p>
   <a href="https://linkedin.com/in/krishna3103">🔗 LinkedIn</a>
@@ -13,7 +13,7 @@
   &nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="https://github.com/krishna310301">🐙 GitHub</a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
-  📍 Bloomington, Indiana
+  📍 Austin, TX · Open to Remote / Hybrid
 </p>
 
 </div>
@@ -22,27 +22,31 @@
 
 ## 👋 About Me
 
-I am a **Cloud and Infrastructure Engineer** with **2+ years of enterprise network operations experience** supporting Fortune 500 carrier environments — **AT&T and Verizon** — at **Tata Communications**.
+I am a **Cloud and Infrastructure Engineer** with **2+ years of production operations experience** supporting Fortune 500 and global carrier environments at **Tata Communications**.
 
-My background started in **network engineering**: real production incidents, BGP routing, MPLS tunnels, link failures, SLA-driven troubleshooting, and multi-vendor infrastructure. I built on that foundation through my **MS in Computer Science at Indiana University Bloomington** (graduated May 2026, GPA 3.5/4.0) with hands-on cloud projects across **AWS, GCP, Terraform, Docker, and CI/CD**.
+My background started in **network engineering and production support**: BGP/MPLS troubleshooting, DWDM transport links, 100G carrier circuits, link failures, SLA-driven incident response, root cause analysis, vendor coordination, and multi-vendor infrastructure operations.
 
-I'm focused on roles where cloud infrastructure, networking, automation, monitoring, and production support come together.
+I built on that foundation through my **MS in Computer Science at Indiana University Bloomington** and hands-on cloud projects across **AWS, GCP, Terraform, Docker, GitHub Actions, CloudWatch, Lambda, SNS, and Amazon Bedrock**.
+
+I am an **AWS Certified Cloud Practitioner** and I am focused on roles where cloud infrastructure, networking, automation, monitoring, and production reliability come together.
 
 ```yaml
-status:       MS Computer Science @ Indiana University — Graduated May 2026
+status:        MS Computer Science @ Indiana University — Graduated May 2026
+certification: AWS Certified Cloud Practitioner — May 2026
 
 current_focus:
-  - Actively seeking Cloud Engineer / Infrastructure roles
-  - AWS Certified Cloud Practitioner preparation
-  - Building AI-Powered Infrastructure Monitor (CloudWatch + Lambda + Bedrock)
-  - Open to full-time positions immediately
+  - Seeking Cloud Engineer / Cloud Infrastructure / Junior DevOps roles
+  - Building AWS and GCP cloud infrastructure projects with Terraform and CI/CD
+  - Applying production operations experience to cloud monitoring, automation, and reliability
+  - Open to full-time roles immediately
 
 target_roles:
   - Cloud Engineer I
+  - Cloud Infrastructure Engineer
   - Cloud Operations Engineer
-  - Infrastructure Engineer
   - Junior DevOps Engineer
-  - Cloud / Network Engineer
+  - Cloud Network Engineer
+  - Infrastructure / Production Support Engineer
 ```
 
 ---
@@ -57,7 +61,7 @@ target_roles:
 
 I build and understand cloud environments from the infrastructure layer up.
 
-**AWS:** EC2, S3, VPC, IAM, CloudWatch, RDS, Lambda  
+**AWS:** EC2, S3, VPC, IAM, CloudWatch, Lambda, SNS, RDS, Bedrock  
 **GCP:** Cloud Run, Pub/Sub, Firestore, Cloud Build, Cloud Functions  
 **Focus:** secure, observable, repeatable infrastructure
 
@@ -68,18 +72,18 @@ I build and understand cloud environments from the infrastructure layer up.
 
 I like replacing manual steps with clear, version-controlled automation.
 
-**Tools:** Terraform, Docker, GitHub Actions, Jenkins, Linux, Bash, Git  
-**Focus:** Infrastructure as Code, deployment reliability, repeatable environments
+**Tools:** Terraform, Docker, GitHub Actions, Linux, Bash, Git  
+**Focus:** Infrastructure as Code, CI/CD validation, deployment reliability
 
 </td>
 <td width="33%" valign="top">
 
 **🌐 Networking Foundation**
 
-My cloud work is backed by real-world network operations experience.
+My cloud work is backed by real production network operations experience.
 
 **Protocols:** TCP/IP, DNS, BGP, OSPF, MPLS, VPN, routing, load balancing  
-**Focus:** fault isolation, SLA-driven incident response, multi-vendor ops
+**Focus:** fault isolation, SLA-driven incident response, multi-vendor operations
 
 </td>
 </tr>
@@ -97,10 +101,9 @@ My cloud work is backed by real-world network operations experience.
 ![GCP](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
 
 **Networking**
 
@@ -110,17 +113,17 @@ My cloud work is backed by real-world network operations experience.
 ![OSPF](https://img.shields.io/badge/OSPF-2563EB?style=for-the-badge)
 ![VPN](https://img.shields.io/badge/VPN-1D4ED8?style=for-the-badge)
 ![DNS](https://img.shields.io/badge/DNS-1E40AF?style=for-the-badge)
-![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
 ![Juniper](https://img.shields.io/badge/Juniper-84B135?style=for-the-badge)
+![Ciena](https://img.shields.io/badge/Ciena-005EB8?style=for-the-badge)
+![Huawei](https://img.shields.io/badge/Huawei-C7000B?style=for-the-badge)
 
 **Languages & Databases**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
 </div>
@@ -128,6 +131,24 @@ My cloud work is backed by real-world network operations experience.
 ---
 
 ## 🚀 Featured Projects
+
+### 🔭 AI-Powered Infrastructure Monitor
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
+![CloudWatch](https://img.shields.io/badge/CloudWatch-FF9900?style=flat-square)
+![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat-square)
+![Bedrock](https://img.shields.io/badge/Bedrock-FF9900?style=flat-square)
+![SNS](https://img.shields.io/badge/SNS-FF9900?style=flat-square)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+
+Event-driven AWS monitoring workflow that turns CloudWatch alarms into AI-generated incident summaries.
+
+- Built a serverless workflow where **CloudWatch alarms trigger Lambda through SNS** to parse infrastructure alert context
+- Integrated **Amazon Bedrock Claude Haiku** to generate incident summaries, likely causes, immediate actions, and severity
+- Provisioned **Lambda, CloudWatch alarms, SNS topics, IAM roles, and Bedrock integration** using Terraform
+- Added **GitHub Actions validation, scoped IAM permissions, fallback handling, and CloudWatch logging** for safer deployments
+
+---
 
 ### ☁️ AWS Cloud Infrastructure Automation
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
@@ -138,12 +159,11 @@ My cloud work is backed by real-world network operations experience.
 ![CloudWatch](https://img.shields.io/badge/CloudWatch-FF9900?style=flat-square)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
-Production-style AWS infrastructure built entirely with **Terraform IaC** — zero manual console configuration.
+Production-style AWS infrastructure built with **Terraform IaC** and CI/CD validation.
 
-- Provisioned **VPC, EC2, S3, IAM least-privilege roles, and security groups** serving a live web app
-- Configured **CloudWatch CPU monitoring** with automated alerting for observability
-- Built **GitHub Actions CI/CD** to validate Terraform plans on every commit, preventing misconfigurations
-
+- Provisioned **VPC, EC2, S3, IAM least-privilege roles, and security groups** using Terraform
+- Configured **CloudWatch CPU monitoring** with automated alerting for infrastructure observability
+- Built **GitHub Actions CI/CD validation** to check Terraform formatting and configuration on every commit
 
 ---
 
@@ -158,10 +178,9 @@ Production-style AWS infrastructure built entirely with **Terraform IaC** — ze
 
 Scalable cloud-native microservices platform processing **350+ headlines from 18 sources**.
 
-- Architected event-driven pipeline using **Cloud Run, Pub/Sub, and Firestore** with fault-tolerant Cloud Scheduler triggers
-- Containerized all services with Docker + automated CI/CD via **Cloud Build**
-- **60% faster** ingestion via parallel pipeline · RESTful API with **JWT auth and RBAC**
-
+- Architected event-driven pipeline using **Cloud Run, Pub/Sub, and Firestore** with Cloud Scheduler triggers
+- Containerized services with Docker and automated builds through **Cloud Build**
+- Reduced ingestion time by **60%** through parallelized data collection and processing
 
 ---
 
@@ -173,26 +192,11 @@ Scalable cloud-native microservices platform processing **350+ headlines from 18
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 ![Render](https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=black)
 
-Full-stack AI app powered by the Claude API with production-grade deployment reliability.
+Full-stack AI web application with containerized local development and CI/CD deployment.
 
-- Containerized with **docker-compose** + GitHub Actions CI/CD deploying to Vercel & Render
-- Infrastructure-level **rate limiting and input validation** ensuring production API stability
-
----
-
-### 🔭 In Progress: AI-Powered Infrastructure Monitor
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
-![CloudWatch](https://img.shields.io/badge/CloudWatch-FF9900?style=flat-square)
-![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat-square)
-![Bedrock](https://img.shields.io/badge/Bedrock-FF9900?style=flat-square)
-![SNS](https://img.shields.io/badge/SNS-FF9900?style=flat-square)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-
-Combining network ops instincts with serverless automation and AI-assisted incident response.
-
-- **CloudWatch** detects infrastructure anomalies → **Lambda** processes alarm context
-- **AWS Bedrock** generates a first-level RCA summary and recommended fix
-- **SNS** delivers the incident summary as an actionable notification
+- Containerized the application with **Docker Compose** and built GitHub Actions CI/CD workflows
+- Deployed frontend and backend to **Vercel and Render**
+- Added **rate limiting and input validation** to improve API reliability and application stability
 
 ---
 
@@ -201,12 +205,12 @@ Combining network ops instincts with serverless automation and AI-assisted incid
 ### Tata Communications · Senior Network Engineer & Shift Lead
 `📍 Pune, India` &nbsp;&nbsp; `🗓 Jun 2022 – Jul 2024`
 
-Supported high-availability carrier network environments for Fortune 500 telecom clients across Alcatel, Juniper, Huawei, and Ciena multi-vendor infrastructure.
+Supported high-availability carrier infrastructure for Fortune 500 and global clients across multi-vendor environments.
 
-- 🔧 Maintained carrier-grade systems troubleshooting **BGP routing, MPLS tunnel disruptions, link failures, protocol misconfigurations, and hardware faults** in Global Service Operations
-- 👥 Led **5-person global shift team** resolving **40+ daily P1/P2 incidents** at 99% success rate across 24/7 operations
-- ⚡ Achieved **4-hour SLA compliance** through structured incident triage, root cause analysis, and cross-vendor coordination
-- 🏆 Earned **Certificate of Excellence** for carrier-grade operational reliability
+- 🔧 Troubleshot **BGP/MPLS routing, TCP/IP connectivity, DWDM optical transport links, and 100G carrier circuits** to isolate service-impacting faults and restore production connectivity
+- 👥 Led **5-person global shift team** resolving **40+ daily P1/P2 incidents** across 24/7 operations
+- ⚡ Achieved **4-hour SLA compliance** through structured incident triage, RCA, cross-vendor coordination, and operational handoffs
+- 🏆 Earned **Certificate of Excellence** for maintaining carrier-grade operational reliability
 
 ---
 
@@ -215,7 +219,7 @@ Supported high-availability carrier network environments for Fortune 500 telecom
 | | Degree | Institution | Period | GPA |
 |---|---|---|---|---|
 | 🎓 | MS · Computer Science | Indiana University Bloomington | Graduated May 2026 | 3.5 / 4.0 |
-| 🎓 | B.Tech · CS & Engineering | SRM Institute of Science and Technology | Jun 2018 – Jun 2022 | 8.4 / 10 |
+| 🎓 | B.Tech · Computer Science & Engineering | SRM Institute of Science and Technology | Jun 2018 – Jun 2022 | 8.4 / 10 |
 
 **Coursework:** Cloud Computing · Computer Networks · Security for Networked Systems · Advanced Database Technologies · Applied Algorithms · Data Mining · Applied Machine Learning · Software Engineering
 
