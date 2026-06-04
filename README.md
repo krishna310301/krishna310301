@@ -26,20 +26,23 @@ I am a **Cloud and Infrastructure Engineer** with **2+ years of production opera
 
 My background started in **network engineering and production support**: BGP/MPLS troubleshooting, DWDM transport links, 100G carrier circuits, link failures, SLA-driven incident response, root cause analysis, vendor coordination, and multi-vendor infrastructure operations.
 
-I built on that foundation through my **MS in Computer Science at Indiana University Bloomington** and hands-on cloud projects across **AWS, Terraform, Docker, GitHub Actions, CloudWatch, Lambda, SNS, and Amazon Bedrock**.
+I built on that foundation through my **MS in Computer Science at Indiana University Bloomington** and hands-on cloud projects across **AWS, Terraform, Docker, GitHub Actions, CloudWatch, Lambda, DynamoDB, API Gateway, SNS, and Amazon Bedrock**.
 
-I am an **AWS Certified Cloud Practitioner** and I am focused on roles where cloud infrastructure, networking, automation, monitoring, and production reliability come together.
+I am an **AWS Certified Cloud Practitioner** and currently completing my **AWS Solutions Architect Associate** certification. I am focused on roles where cloud infrastructure, networking, automation, monitoring, and production reliability come together.
 
 ```yaml
 status:        MS Computer Science @ Indiana University — Graduated May 2026
-certification: AWS Certified Cloud Practitioner — 2026
+
+certifications:
+  - AWS Certified Cloud Practitioner (2026)
+  - AWS Solutions Architect Associate (In Progress — 2026)
 
 work_authorization: OPT (F-1) · Available for immediate full-time employment
 
 current_focus:
   - Seeking Cloud Engineer / Cloud Infrastructure / Junior DevOps roles
-  - Building AWS cloud infrastructure projects with Terraform and CI/CD
-  - Applying production operations experience to cloud monitoring, automation, and reliability
+  - Completing AWS Solutions Architect Associate certification
+  - Built CloudOps Uptime Monitor — serverless AWS uptime monitoring with React dashboard
   - Open to full-time roles immediately
 
 target_roles:
@@ -55,8 +58,9 @@ target_roles:
 
 ## 🏆 Certifications
 
-| Badge | Certification | Issuer | Year |
+| Badge | Certification | Issuer | Status |
 |---|---|---|---|
+| ☁️ | AWS Solutions Architect Associate | Amazon Web Services | In Progress — 2026 |
 | ☁️ | AWS Certified Cloud Practitioner | Amazon Web Services | 2026 |
 
 ---
@@ -71,7 +75,7 @@ target_roles:
 
 I build and understand cloud environments from the infrastructure layer up.
 
-**AWS:** EC2, S3, VPC, IAM, CloudWatch, Lambda, SNS, RDS, Bedrock
+**AWS:** EC2, S3, VPC, IAM, CloudWatch, Lambda, API Gateway, EventBridge, SNS, DynamoDB, Bedrock
 **Focus:** secure, observable, repeatable infrastructure
 
 </td>
@@ -121,6 +125,9 @@ My cloud work is backed by real production network operations experience.
 ![IAM](https://img.shields.io/badge/IAM-FF9900?style=for-the-badge)
 ![CloudWatch](https://img.shields.io/badge/CloudWatch-FF9900?style=for-the-badge)
 ![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=for-the-badge)
+![API Gateway](https://img.shields.io/badge/API_Gateway-FF9900?style=for-the-badge)
+![EventBridge](https://img.shields.io/badge/EventBridge-FF9900?style=for-the-badge)
+![DynamoDB](https://img.shields.io/badge/DynamoDB-FF9900?style=for-the-badge)
 ![SNS](https://img.shields.io/badge/SNS-FF9900?style=for-the-badge)
 ![Bedrock](https://img.shields.io/badge/Bedrock-FF9900?style=for-the-badge)
 
@@ -149,8 +156,28 @@ My cloud work is backed by real production network operations experience.
 
 ## 🚀 Featured Projects
 
+### 📡 [CloudOps Uptime Monitor](https://github.com/krishna310301/cloudops-uptime-monitor)
+![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat-square)
+![DynamoDB](https://img.shields.io/badge/DynamoDB-FF9900?style=flat-square)
+![API Gateway](https://img.shields.io/badge/API_Gateway-FF9900?style=flat-square)
+![EventBridge](https://img.shields.io/badge/EventBridge-FF9900?style=flat-square)
+![SNS](https://img.shields.io/badge/SNS-FF9900?style=flat-square)
+![CloudFront](https://img.shields.io/badge/CloudFront-FF9900?style=flat-square)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+
+Production-grade serverless website uptime monitoring system with a live React dashboard.
+
+**Live:** https://d3hlcf532b9plq.cloudfront.net
+
+- Architected event-driven pipeline where **EventBridge triggers Lambda every 5 minutes** to check website availability, storing status codes and latency in **DynamoDB** with **SNS email alerts** on downtime
+- Built and hosted a **React dashboard** on S3 and CloudFront displaying live status, latency, and uptime history; exposed via **API Gateway** backed by Lambda with IAM least-privilege access
+- Provisioned all **13 AWS resources** with **Terraform IaC**; automated Lambda deployment, React build, S3 sync, and CloudFront cache invalidation via **GitHub Actions CI/CD** on every commit
+
+---
+
 ### 🔭 [AI-Powered Infrastructure Monitor](https://github.com/krishna310301/aws-infra-monitor)
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
 ![CloudWatch](https://img.shields.io/badge/CloudWatch-FF9900?style=flat-square)
 ![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat-square)
 ![Bedrock](https://img.shields.io/badge/Bedrock-FF9900?style=flat-square)
@@ -160,43 +187,25 @@ My cloud work is backed by real production network operations experience.
 
 Event-driven AWS monitoring workflow that turns CloudWatch alarms into AI-generated incident summaries.
 
-- Built a serverless workflow where **CloudWatch alarms trigger Lambda through SNS** to parse infrastructure alert context
-- Integrated **Amazon Bedrock Claude Haiku** to generate incident summaries, likely causes, immediate actions, and severity
-- Provisioned **Lambda, CloudWatch alarms, SNS topics, IAM roles, and Bedrock integration** using Terraform
-- Added **GitHub Actions validation, scoped IAM permissions, fallback handling, and CloudWatch logging** for safer deployments
+- Built serverless workflow where **CloudWatch alarms trigger Lambda** to parse infrastructure alert context and dispatch notifications via **Amazon SNS**
+- Integrated **Amazon Bedrock Claude Haiku** to generate incident summaries with likely causes, immediate actions, and severity ratings
+- Provisioned all components with **Terraform IaC** — Lambda, SNS topics, IAM roles, CloudWatch alarms — with GitHub Actions validation and least-privilege access policies
 
 ---
 
 ### ☁️ [AWS Cloud Infrastructure Automation](https://github.com/krishna310301/aws-cloud-infra)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
 ![EC2](https://img.shields.io/badge/EC2-FF9900?style=flat-square)
 ![S3](https://img.shields.io/badge/S3-FF9900?style=flat-square)
 ![IAM](https://img.shields.io/badge/IAM-FF9900?style=flat-square)
 ![CloudWatch](https://img.shields.io/badge/CloudWatch-FF9900?style=flat-square)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
-Production-style AWS infrastructure built with **Terraform IaC** and CI/CD validation.
+Production-style AWS infrastructure built entirely with **Terraform IaC** — zero manual console configuration.
 
-- Provisioned **VPC, EC2, S3, IAM least-privilege roles, and security groups** using Terraform — zero manual console configuration
-- Configured **CloudWatch CPU monitoring** with automated alerting for infrastructure observability
-- Built **GitHub Actions CI/CD validation** to check Terraform plans on every commit, preventing misconfigurations before deployment
-
----
-
-### 🖋️ [AI Text Summarizer](https://github.com/krishna310301/ai-summarizer-app)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
-![Render](https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=black)
-
-Full-stack AI web application with containerized deployment and production-grade reliability controls.
-
-- Containerized React frontend and Node.js backend with **Docker Compose** — consistent environments across local and production
-- Built **GitHub Actions CI/CD pipeline** automating testing and deployment to Vercel and Render on every push
-- Implemented **rate limiting and input validation** to protect API stability and prevent abuse of the Claude API-powered summarization service
+- Provisioned **VPC, EC2, S3, IAM least-privilege roles, and security groups** — reducing environment setup from hours of manual work to a single repeatable deployment command
+- Designed **VPC network topology** with public/private subnets, route tables, and security group rules enforcing least-privilege ingress and egress controls
+- Built **GitHub Actions CI/CD** to validate Terraform plans on every commit, preventing misconfigurations before deployment
 
 ---
 
