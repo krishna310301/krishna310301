@@ -2,239 +2,136 @@
 
 # Krishna Koushik Thokala
 
-### Cloud & Infrastructure Engineer
+### Cloud Engineer | AWS, EKS/Kubernetes, Terraform, Docker, CloudWatch
 
-> 🟢 **Open to** · Cloud Engineer I · Cloud Infrastructure Engineer · Cloud Operations · Junior DevOps · Cloud-Network Hybrid · Infrastructure / Production Support
+Production network operations shaped how I build cloud systems: observable, automated, secure, and reliable by default.
 
 <p>
-  <a href="https://linkedin.com/in/krishna3103">🔗 LinkedIn</a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="mailto:krishnakoushikthokala@gmail.com">✉️ krishnakoushikthokala@gmail.com</a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://github.com/krishna310301">🐙 GitHub</a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  📍 Austin, TX · Open to Relocation / Remote / Hybrid
+  <a href="https://linkedin.com/in/krishna3103">LinkedIn</a>
+  &nbsp;·&nbsp;
+  <a href="mailto:krishnakoushikthokala@gmail.com">krishnakoushikthokala@gmail.com</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/krishna310301">GitHub</a>
+  &nbsp;·&nbsp;
+  Austin, TX
 </p>
+
+Open to Cloud Engineer, Cloud Infrastructure Engineer, Junior DevOps Engineer, Associate SRE, and Cloud Operations roles.
 
 </div>
 
 ---
 
-## 👋 About Me
+## Why I Build Cloud Systems This Way
 
-I am a **Cloud and Infrastructure Engineer** with **2+ years of production operations experience** supporting Fortune 500 and global carrier environments at **Tata Communications**.
+Before moving deeper into cloud engineering, I spent 2+ years in production network operations at Tata Communications. I supported SLA-driven incident response, RCA, vendor coordination, runbooks, operational handoffs, and 24/7 troubleshooting across carrier-grade infrastructure.
 
-My background started in **network engineering and production support**: BGP/MPLS troubleshooting, DWDM transport links, 100G carrier circuits, link failures, SLA-driven incident response, root cause analysis, vendor coordination, and multi-vendor infrastructure operations.
+That background matters because I have seen infrastructure fail in production. I have worked through BGP/MPLS routing failures, TCP/IP connectivity issues, DWDM optical transport faults, 100G circuit incidents, and multi-vendor escalations where clear ownership and clean handoffs mattered.
 
-I built on that foundation through my **MS in Computer Science at Indiana University Bloomington** and hands-on cloud projects across **AWS, Terraform, Docker, GitHub Actions, CloudWatch, Lambda, DynamoDB, API Gateway, SNS, and Amazon Bedrock**.
-
-I am an **AWS Certified Cloud Practitioner** and currently completing my **AWS Solutions Architect Associate** certification. I am focused on roles where cloud infrastructure, networking, automation, monitoring, and production reliability come together.
+Now I build cloud projects with that same operations-first mindset. I care about how systems are deployed, monitored, scaled, secured, debugged, and recovered when something breaks.
 
 ```yaml
-status:        MS Computer Science @ Indiana University — Graduated May 2026
-
-certifications:
-  - AWS Certified Cloud Practitioner (2026)
-  - AWS Solutions Architect Associate (In Progress — 2026)
-
-work_authorization: OPT (F-1) · Available for immediate full-time employment
-
 current_focus:
-  - Seeking Cloud Engineer / Cloud Infrastructure / Junior DevOps roles
-  - Completing AWS Solutions Architect Associate certification
-  - Built CloudOps Uptime Monitor — serverless AWS uptime monitoring with React dashboard
-  - Open to full-time roles immediately
+  - AWS cloud infrastructure
+  - Kubernetes and Amazon EKS
+  - Terraform infrastructure as code
+  - Dockerized services and CI/CD
+  - CloudWatch observability and incident workflows
 
-target_roles:
-  - Cloud Engineer I
-  - Cloud Infrastructure Engineer
-  - Cloud Operations Engineer
-  - Junior DevOps Engineer
-  - Cloud Network Engineer
-  - Infrastructure / Production Support Engineer
+background:
+  - 2+ years production network operations
+  - SLA-driven incident response and RCA
+  - BGP, MPLS, TCP/IP, DWDM, 100G carrier circuits
+  - MS Computer Science, Indiana University Bloomington
+  - AWS Certified Cloud Practitioner
 ```
 
 ---
 
-## 🏆 Certifications
+## Featured Project
 
-| Badge | Certification | Issuer | Status |
-|---|---|---|---|
-| ☁️ | AWS Solutions Architect Associate | Amazon Web Services | In Progress — 2026 |
-| ☁️ | AWS Certified Cloud Practitioner | Amazon Web Services | 2026 |
+### [CloudOps SRE Platform](https://github.com/krishna310301/cloudops-sre-platform)
 
----
+CloudOps SRE Platform is a cloud-native reliability operations dashboard built on Amazon EKS. It tracks service health, deployments, incidents, incident timelines, MTTR, and SLO-style reliability metrics.
 
-## 🧱 What I Bring
+![CloudOps SRE Platform Architecture](https://raw.githubusercontent.com/krishna310301/cloudops-sre-platform/main/docs/architecture/cloudops-sre-platform-architecture.png)
 
-<table>
-<tr>
-<td width="33%" valign="top">
+**What it shows**
 
-**☁️ Cloud Infrastructure**
+- Amazon EKS deployment with Kubernetes Deployments, Services, ALB Ingress, Helm, resource limits, readiness/liveness probes, and HPA autoscaling
+- AWS infrastructure with Terraform: VPC, EKS, ECR, RDS PostgreSQL, IAM, Secrets Manager, security groups, and CloudWatch
+- Production-style app stack with React, FastAPI, PostgreSQL/RDS, Docker, ECR, and GitHub Actions
+- SRE product workflows: service catalog, deployment history, P1-P4 incidents, incident timelines, MTTR, health dashboard, and reliability status
+- Short-lived AWS demo run with screenshots, HPA load testing, CloudWatch logs, EKS resources, and same-day Terraform destroy for cost control
 
-I build and understand cloud environments from the infrastructure layer up.
+**Tech:** AWS, EKS, Kubernetes, Helm, Terraform, Docker, ECR, RDS PostgreSQL, ALB Ingress, CloudWatch, GitHub Actions, FastAPI, React
 
-**AWS:** EC2, S3, VPC, IAM, CloudWatch, Lambda, API Gateway, EventBridge, SNS, DynamoDB, Bedrock
-**Focus:** secure, observable, repeatable infrastructure
-
-</td>
-<td width="33%" valign="top">
-
-**⚙️ Automation & DevOps**
-
-I like replacing manual steps with clear, version-controlled automation.
-
-**Tools:** Terraform, Docker, GitHub Actions, Linux, Bash, Git
-**Focus:** Infrastructure as Code, CI/CD validation, deployment reliability
-
-</td>
-<td width="33%" valign="top">
-
-**🌐 Networking Foundation**
-
-My cloud work is backed by real production network operations experience.
-
-**Protocols:** TCP/IP, BGP, OSPF, MPLS, VPN, DNS, DHCP, routing, load balancing
-**Focus:** fault isolation, SLA-driven incident response, multi-vendor operations
-
-</td>
-</tr>
-</table>
+**Links:** [Repository](https://github.com/krishna310301/cloudops-sre-platform) · [Demo screenshots](https://github.com/krishna310301/cloudops-sre-platform/tree/main/docs/screenshots/aws-demo-2026-06-06) · [Architecture](https://github.com/krishna310301/cloudops-sre-platform/blob/main/docs/architecture/cloudops-sre-platform-architecture.png)
 
 ---
 
-## 🛠 Tech Stack
+## Other Cloud Projects
 
-<div align="center">
+### [CloudOps Uptime Monitor](https://github.com/krishna310301/cloudops-uptime-monitor)
 
-**Cloud & DevOps**
+Serverless AWS uptime monitoring application with a live React dashboard.
 
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+- EventBridge triggers Lambda every 5 minutes to check service availability
+- DynamoDB stores status codes, latency, and uptime history
+- SNS sends downtime alerts
+- S3 and CloudFront host the frontend dashboard
+- Terraform provisions AWS infrastructure and GitHub Actions automates deployment
 
-**AWS Services**
+**Tech:** Lambda, DynamoDB, API Gateway, EventBridge, SNS, S3, CloudFront, CloudWatch, Terraform, React, GitHub Actions
 
-![EC2](https://img.shields.io/badge/EC2-FF9900?style=for-the-badge)
-![S3](https://img.shields.io/badge/S3-FF9900?style=for-the-badge)
-![VPC](https://img.shields.io/badge/VPC-FF9900?style=for-the-badge)
-![IAM](https://img.shields.io/badge/IAM-FF9900?style=for-the-badge)
-![CloudWatch](https://img.shields.io/badge/CloudWatch-FF9900?style=for-the-badge)
-![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=for-the-badge)
-![API Gateway](https://img.shields.io/badge/API_Gateway-FF9900?style=for-the-badge)
-![EventBridge](https://img.shields.io/badge/EventBridge-FF9900?style=for-the-badge)
-![DynamoDB](https://img.shields.io/badge/DynamoDB-FF9900?style=for-the-badge)
-![SNS](https://img.shields.io/badge/SNS-FF9900?style=for-the-badge)
-![Bedrock](https://img.shields.io/badge/Bedrock-FF9900?style=for-the-badge)
+### [AI-Powered Infrastructure Monitor](https://github.com/krishna310301/aws-infra-monitor)
 
-**Networking**
+Event-driven AWS monitoring workflow that turns CloudWatch alarms into incident summaries.
 
-![BGP](https://img.shields.io/badge/BGP-0369A1?style=for-the-badge)
-![MPLS](https://img.shields.io/badge/MPLS-0284C7?style=for-the-badge)
-![TCP/IP](https://img.shields.io/badge/TCP%2FIP-0EA5E9?style=for-the-badge)
-![OSPF](https://img.shields.io/badge/OSPF-2563EB?style=for-the-badge)
-![VPN](https://img.shields.io/badge/VPN-1D4ED8?style=for-the-badge)
-![DNS](https://img.shields.io/badge/DNS-1E40AF?style=for-the-badge)
-![Juniper](https://img.shields.io/badge/Juniper-84B135?style=for-the-badge)
-![Ciena](https://img.shields.io/badge/Ciena-005EB8?style=for-the-badge)
-![Huawei](https://img.shields.io/badge/Huawei-C7000B?style=for-the-badge)
+- CloudWatch alarms trigger Lambda through SNS
+- Lambda parses alert context and calls Amazon Bedrock
+- Bedrock generates likely causes, severity, and remediation guidance
+- Terraform provisions Lambda, SNS, IAM, CloudWatch alarms, and Bedrock access
 
-**Languages**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge)
-
-</div>
+**Tech:** AWS Lambda, CloudWatch, SNS, Amazon Bedrock, Terraform, IAM, Python, GitHub Actions
 
 ---
 
-## 🚀 Featured Projects
+## Technical Focus
 
-### 📡 [CloudOps Uptime Monitor](https://github.com/krishna310301/cloudops-uptime-monitor)
-![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat-square)
-![DynamoDB](https://img.shields.io/badge/DynamoDB-FF9900?style=flat-square)
-![API Gateway](https://img.shields.io/badge/API_Gateway-FF9900?style=flat-square)
-![EventBridge](https://img.shields.io/badge/EventBridge-FF9900?style=flat-square)
-![SNS](https://img.shields.io/badge/SNS-FF9900?style=flat-square)
-![CloudFront](https://img.shields.io/badge/CloudFront-FF9900?style=flat-square)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-
-Production-grade serverless website uptime monitoring system with a live React dashboard.
-
-**Live:** https://d3hlcf532b9plq.cloudfront.net
-
-- Architected event-driven pipeline where **EventBridge triggers Lambda every 5 minutes** to check website availability, storing status codes and latency in **DynamoDB** with **SNS email alerts** on downtime
-- Built and hosted a **React dashboard** on S3 and CloudFront displaying live status, latency, and uptime history; exposed via **API Gateway** backed by Lambda with IAM least-privilege access
-- Provisioned all **13 AWS resources** with **Terraform IaC**; automated Lambda deployment, React build, S3 sync, and CloudFront cache invalidation via **GitHub Actions CI/CD** on every commit
+| Area | Tools and Concepts |
+|---|---|
+| Cloud | AWS, EC2, S3, VPC, IAM, Lambda, API Gateway, EventBridge, CloudWatch, SNS, DynamoDB, CloudFront, EKS, ECR, RDS, ALB |
+| Kubernetes and DevOps | Kubernetes, Amazon EKS, Helm, Docker, Terraform, GitHub Actions, CI/CD, Linux, Bash, Git |
+| Observability and Operations | CloudWatch Logs, metrics, alarms, HPA, incident response, RCA, runbooks, SLA-driven troubleshooting |
+| Networking | TCP/IP, BGP, OSPF, MPLS, VPN, DNS, load balancing, firewalls, Juniper/Cisco routing |
+| Programming | Python, Bash, SQL, PostgreSQL, REST APIs, FastAPI, React, Java, C/C++ |
 
 ---
 
-### 🔭 [AI-Powered Infrastructure Monitor](https://github.com/krishna310301/aws-infra-monitor)
-![CloudWatch](https://img.shields.io/badge/CloudWatch-FF9900?style=flat-square)
-![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat-square)
-![Bedrock](https://img.shields.io/badge/Bedrock-FF9900?style=flat-square)
-![SNS](https://img.shields.io/badge/SNS-FF9900?style=flat-square)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+## Experience
 
-Event-driven AWS monitoring workflow that turns CloudWatch alarms into AI-generated incident summaries.
+### Tata Communications, Senior Network Engineer, Shift Lead
 
-- Built serverless workflow where **CloudWatch alarms trigger Lambda** to parse infrastructure alert context and dispatch notifications via **Amazon SNS**
-- Integrated **Amazon Bedrock Claude Haiku** to generate incident summaries with likely causes, immediate actions, and severity ratings
-- Provisioned all components with **Terraform IaC** — Lambda, SNS topics, IAM roles, CloudWatch alarms — with GitHub Actions validation and least-privilege access policies
+Supported high-availability carrier infrastructure for global telecom and enterprise clients across Juniper, Huawei, Ciena, and Alcatel environments.
+
+- Troubleshot BGP/MPLS routing failures, TCP/IP connectivity issues, DWDM optical transport faults, and 100G carrier circuit incidents
+- Led a 5-person global NOC shift handling 40+ daily P1/P2 incidents across 24/7 operations
+- Coordinated triage, escalation, vendor communication, RCA documentation, and operational handoffs
+- Achieved 4-hour SLA compliance for high-priority incidents and earned a Certificate of Excellence for operational reliability
 
 ---
 
-### ☁️ [AWS Cloud Infrastructure Automation](https://github.com/krishna310301/aws-cloud-infra)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-![EC2](https://img.shields.io/badge/EC2-FF9900?style=flat-square)
-![S3](https://img.shields.io/badge/S3-FF9900?style=flat-square)
-![IAM](https://img.shields.io/badge/IAM-FF9900?style=flat-square)
-![CloudWatch](https://img.shields.io/badge/CloudWatch-FF9900?style=flat-square)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+## Education and Certifications
 
-Production-style AWS infrastructure built entirely with **Terraform IaC** — zero manual console configuration.
-
-- Provisioned **VPC, EC2, S3, IAM least-privilege roles, and security groups** — reducing environment setup from hours of manual work to a single repeatable deployment command
-- Designed **VPC network topology** with public/private subnets, route tables, and security group rules enforcing least-privilege ingress and egress controls
-- Built **GitHub Actions CI/CD** to validate Terraform plans on every commit, preventing misconfigurations before deployment
+- MS Computer Science, Indiana University Bloomington, May 2026
+- B.Tech Computer Science and Engineering, SRM Institute of Science and Technology
+- AWS Certified Cloud Practitioner, 2026
+- AWS Solutions Architect Associate, in progress
 
 ---
 
-## 💼 Experience
-
-### Tata Communications · Senior Network Engineer & Shift Lead
-`📍 Pune, India` &nbsp;&nbsp; `🗓 Jun 2022 – Jul 2024`
-
-Supported high-availability carrier infrastructure for Fortune 500 and global clients — AT&T, Verizon, and Telstra — across Alcatel, Juniper, Huawei, and Ciena multi-vendor environments.
-
-- 🔧 Troubleshot **BGP/MPLS routing, TCP/IP connectivity, DWDM optical transport links, and 100G carrier circuits** to isolate service-impacting faults and restore production connectivity
-- 👥 Led **5-person global shift team** resolving **40+ daily P1/P2 incidents** at **99% success rate** across 24/7 follow-the-sun operations
-- ⚡ Achieved **4-hour SLA compliance** through systematic fault isolation, root cause analysis, and cross-vendor coordination
-- 🏆 Earned **Certificate of Excellence** for maintaining carrier-grade operational reliability
-
----
-
-## 🎓 Education
-
-| | Degree | Institution | Period | GPA |
-|---|---|---|---|---|
-| 🎓 | MS · Computer Science | Indiana University Bloomington | Graduated May 2026 | 3.5 / 4.0 |
-| 🎓 | B.Tech · Computer Science & Engineering | SRM Institute of Science and Technology | Jun 2018 – Jun 2022 | 8.4 / 10 |
-
-**Coursework:** Cloud Computing · Computer Networks · Security for Networked Systems · Applied Algorithms · Applied Machine Learning · Software Engineering
-
----
-
-## 📊 GitHub Activity
+## GitHub Activity
 
 <div align="center">
 
@@ -250,6 +147,6 @@ Supported high-availability carrier infrastructure for Fortune 500 and global cl
 
 <div align="center">
 
-*"Infrastructure is invisible when it works — and everything when it doesn't."*
+Infrastructure is invisible when it works, and everything when it does not.
 
 </div>
