@@ -56,7 +56,7 @@ CloudOps SRE Platform is a cloud-native reliability operations dashboard built o
 
 ![CloudOps SRE Platform Architecture](https://raw.githubusercontent.com/krishna310301/cloudops-sre-platform/main/docs/architecture/cloudops-sre-platform-architecture.png)
 
-**What it shows**
+**What I focused on**
 
 - Amazon EKS deployment with Kubernetes Deployments, Services, ALB Ingress, Helm, resource limits, readiness/liveness probes, and HPA autoscaling
 - AWS infrastructure with Terraform: VPC, EKS, ECR, RDS PostgreSQL, IAM, Secrets Manager, security groups, and CloudWatch
@@ -72,7 +72,7 @@ CloudOps SRE Platform is a cloud-native reliability operations dashboard built o
 
 ## Currently Improving
 
-I am continuing to harden CloudOps SRE Platform as a production-style platform project. Current roadmap items are tracked in the repo's [open issues](https://github.com/krishna310301/cloudops-sre-platform/issues).
+I am still using CloudOps SRE Platform as a place to practice production hardening. Current roadmap items are tracked in the repo's [open issues](https://github.com/krishna310301/cloudops-sre-platform/issues).
 
 - SLO/error budget tracking for service reliability views
 - Structured JSON logging and request correlation IDs
