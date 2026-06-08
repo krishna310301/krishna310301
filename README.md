@@ -84,13 +84,13 @@ Serverless AWS uptime monitoring application with a live React dashboard.
 
 **Tech:** Lambda, DynamoDB, API Gateway, EventBridge, SNS, S3, CloudFront, CloudWatch, Terraform, React, GitHub Actions
 
-### [AI-Powered Infrastructure Monitor](https://github.com/krishna310301/aws-infra-monitor)
+### [AWS Incident Triage Pipeline](https://github.com/krishna310301/aws-incident-triage-pipeline)
 
-Event-driven AWS monitoring workflow that turns CloudWatch alarms into incident summaries.
+Event-driven AWS incident response workflow that turns CloudWatch alarms into structured triage summaries.
 
 - CloudWatch alarms trigger Lambda through SNS
 - Lambda parses alert context and calls Amazon Bedrock
-- Bedrock generates likely causes, severity, and remediation guidance
+- Bedrock assists with likely causes, severity, and remediation guidance
 - Terraform provisions Lambda, SNS, IAM, CloudWatch alarms, and Bedrock access
 
 **Tech:** AWS Lambda, CloudWatch, SNS, Amazon Bedrock, Terraform, IAM, Python, GitHub Actions
