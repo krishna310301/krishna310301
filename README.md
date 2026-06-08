@@ -13,10 +13,10 @@ Production network operations shaped how I build cloud systems: observable, auto
   &nbsp;·&nbsp;
   <a href="https://github.com/krishna310301">GitHub</a>
   &nbsp;·&nbsp;
-  Austin, TX
+  Austin, TX · Open to U.S. cloud/SRE roles
 </p>
 
-Open to Cloud Engineer, Cloud Infrastructure Engineer, Junior DevOps Engineer, Associate SRE, and Cloud Operations roles.
+Open to Cloud Engineer, Cloud Infrastructure Engineer, Junior DevOps Engineer, Associate SRE, and Cloud Operations Engineer roles.
 
 </div>
 
