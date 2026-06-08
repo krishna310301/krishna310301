@@ -105,7 +105,7 @@ Event-driven AWS monitoring workflow that turns CloudWatch alarms into incident 
 | Kubernetes and DevOps | Kubernetes, Amazon EKS, Helm, Docker, Terraform, GitHub Actions, CI/CD, Linux, Bash, Git |
 | Observability and Operations | CloudWatch Logs, metrics, alarms, HPA, incident response, RCA, runbooks, SLA-driven troubleshooting |
 | Networking | TCP/IP, BGP, OSPF, MPLS, VPN, DNS, load balancing, firewalls, Juniper/Cisco routing |
-| Programming | Python, Bash, SQL, PostgreSQL, REST APIs, FastAPI, React, Java, C/C++ |
+| Programming | Python, Bash, SQL, PostgreSQL, REST APIs, FastAPI, React |
 
 ---
 
@@ -127,7 +127,6 @@ Supported high-availability carrier infrastructure for global telecom and enterp
 - MS Computer Science, Indiana University Bloomington, May 2026
 - B.Tech Computer Science and Engineering, SRM Institute of Science and Technology
 - AWS Certified Cloud Practitioner, 2026
-- AWS Solutions Architect Associate, in progress
 
 ---
 
