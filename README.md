@@ -70,6 +70,19 @@ CloudOps SRE Platform is a cloud-native reliability operations dashboard built o
 
 ---
 
+## Currently Improving
+
+I am continuing to harden CloudOps SRE Platform as a production-style platform project. Current roadmap items are tracked in the repo's [open issues](https://github.com/krishna310301/cloudops-sre-platform/issues).
+
+- SLO/error budget tracking for service reliability views
+- Structured JSON logging and request correlation IDs
+- Release tagging and image promotion workflow
+- Kubernetes manifest validation in CI
+- RDS connectivity and secret rotation runbook
+- Optional Grafana/kube-prometheus-stack observability pass
+
+---
+
 ## Other Cloud Projects
 
 ### [CloudOps Uptime Monitor](https://github.com/krishna310301/cloudops-uptime-monitor)
