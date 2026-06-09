@@ -2,9 +2,9 @@
 
 # Krishna Koushik Thokala
 
-### Cloud Engineer | AWS, EKS/Kubernetes, Terraform, Docker, CloudWatch
+### Cloud Infrastructure Engineer | AWS, EKS/Kubernetes, Terraform, Docker, CloudWatch
 
-Production network operations shaped how I build cloud systems: observable, automated, secure, and reliable by default.
+Production network operations shaped how I build cloud infrastructure: observable, automated, secure, and reliable by default.
 
 <p>
   <a href="https://linkedin.com/in/krishna3103">LinkedIn</a>
@@ -13,10 +13,10 @@ Production network operations shaped how I build cloud systems: observable, auto
   &nbsp;·&nbsp;
   <a href="https://github.com/krishna310301">GitHub</a>
   &nbsp;·&nbsp;
-  Austin, TX · Open to U.S. cloud/SRE roles
+  Austin, TX · Open to U.S. cloud infrastructure and platform engineering roles
 </p>
 
-Open to Cloud Engineer, Cloud Infrastructure Engineer, Junior DevOps Engineer, Associate SRE, and Cloud Operations Engineer roles.
+Open to Cloud Infrastructure Engineer, Cloud Engineer, Platform Engineer, Infrastructure Engineer, Associate SRE, and Junior DevOps Engineer roles.
 
 </div>
 
@@ -28,7 +28,7 @@ Before moving deeper into cloud engineering, I spent 2+ years in production netw
 
 That background matters because I have seen infrastructure fail in production. I have worked through BGP/MPLS routing failures, TCP/IP connectivity issues, DWDM optical transport faults, 100G circuit incidents, and multi-vendor escalations where clear ownership and clean handoffs mattered.
 
-Now I build cloud projects with that same operations-first mindset. I care about how systems are deployed, monitored, scaled, secured, debugged, and recovered when something breaks.
+Now I build cloud infrastructure projects with that same operations-first mindset. I care about how systems are deployed, monitored, scaled, secured, debugged, and recovered when something breaks.
 
 ```yaml
 current_focus:
@@ -37,6 +37,7 @@ current_focus:
   - Terraform infrastructure as code
   - Dockerized services and CI/CD
   - CloudWatch observability and incident workflows
+  - Platform engineering foundations
 
 background:
   - 2+ years production network operations
@@ -114,9 +115,9 @@ Event-driven AWS incident response workflow that turns CloudWatch alarms into st
 
 | Area | Tools and Concepts |
 |---|---|
-| Cloud | AWS, EC2, S3, VPC, IAM, Lambda, API Gateway, EventBridge, CloudWatch, SNS, DynamoDB, CloudFront, EKS, ECR, RDS, ALB |
-| Kubernetes and DevOps | Kubernetes, Amazon EKS, Helm, Docker, Terraform, GitHub Actions, CI/CD, Linux, Bash, Git |
-| Observability and Operations | CloudWatch Logs, metrics, alarms, HPA, incident response, RCA, runbooks, SLA-driven troubleshooting |
+| Cloud | AWS, VPC, IAM, EC2, S3, Lambda, API Gateway, EventBridge, CloudWatch, SNS, DynamoDB, CloudFront, EKS, ECR, RDS, ALB, Secrets Manager |
+| Kubernetes and DevOps | Kubernetes, Amazon EKS, Helm, Docker, Terraform, GitHub Actions, CI/CD, Ingress, ConfigMaps, Secrets, readiness/liveness probes, HPA |
+| Observability and SRE | CloudWatch logs, metrics, alarms, HPA, incident response, RCA, runbooks, SLA-driven troubleshooting, MTTR, SLO-style metrics |
 | Networking | TCP/IP, BGP, OSPF, MPLS, VPN, DNS, load balancing, firewalls, Juniper/Cisco routing |
 | Programming | Python, Bash, SQL, PostgreSQL, REST APIs, FastAPI, React |
 
@@ -126,12 +127,12 @@ Event-driven AWS incident response workflow that turns CloudWatch alarms into st
 
 ### Tata Communications, Senior Network Engineer, Shift Lead
 
-Supported high-availability carrier infrastructure for global telecom and enterprise clients across Juniper, Huawei, Ciena, and Alcatel environments.
+Maintained carrier-grade network availability for global telecom and enterprise clients across Juniper, Huawei, Ciena, and Alcatel environments.
 
-- Troubleshot BGP/MPLS routing failures, TCP/IP connectivity issues, DWDM optical transport faults, and 100G carrier circuit incidents
-- Led a 5-person global NOC shift handling 40+ daily P1/P2 incidents across 24/7 operations
-- Coordinated triage, escalation, vendor communication, RCA documentation, and operational handoffs
-- Achieved 4-hour SLA compliance for high-priority incidents and earned a Certificate of Excellence for operational reliability
+- Isolated BGP/MPLS routing failures, TCP/IP connectivity issues, DWDM optical transport faults, and 100G carrier circuit incidents
+- Led a 5-person global NOC shift through 40+ daily priority incidents, including P1/P2 escalations
+- Coordinated triage ownership, escalation paths, vendor communication, RCA documentation, and operational handoffs
+- Restored high-priority services within 4-hour SLA targets and earned a Certificate of Excellence for operational reliability
 
 ---
 
