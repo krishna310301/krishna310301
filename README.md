@@ -16,7 +16,7 @@ Production network operations shaped how I build cloud infrastructure: observabl
   Austin, TX · Open to U.S. cloud infrastructure and platform engineering roles
 </p>
 
-Open to Cloud Infrastructure Engineer, Cloud Engineer, Platform Engineer, Infrastructure Engineer, Associate SRE, and Junior DevOps Engineer roles.
+Open to Cloud Infrastructure Engineer, Cloud Engineer, Platform Engineer, Infrastructure Engineer, Associate SRE, and DevOps Engineer roles.
 
 </div>
 
