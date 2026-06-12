@@ -13,7 +13,7 @@ Production network operations shaped how I build cloud infrastructure: observabl
   &nbsp;·&nbsp;
   <a href="https://github.com/krishna310301">GitHub</a>
   &nbsp;·&nbsp;
-  Austin, TX ·
+  Austin, TX · 
 </p>
 
 Open to Cloud Infrastructure Engineer, Cloud Engineer, Platform Engineer, Infrastructure Engineer, Associate SRE, and DevOps Engineer roles.
@@ -88,14 +88,14 @@ I am still using CloudOps SRE Platform as a place to practice production hardeni
 
 ### [CloudOps Uptime Monitor](https://github.com/krishna310301/cloudops-uptime-monitor)
 
-Serverless AWS uptime monitoring application with a live React dashboard.
+Serverless AWS uptime monitoring platform with a React dashboard, state-change alerts, CloudWatch observability, and Terraform-managed infrastructure.
 
-- EventBridge triggers Lambda every 5 minutes to check service availability
-- DynamoDB stores monitored URLs, retained status history, and latest-status rows for efficient dashboard reads
-- SNS sends downtime alerts and CloudWatch tracks 9 custom application metrics
-- API Gateway uses API key enforcement, throttling, quota controls, and restricted CORS
-- S3 and CloudFront host the frontend dashboard
-- Terraform provisions AWS infrastructure and GitHub Actions validates tests, frontend build, Terraform, and security scans
+- EventBridge triggers Lambda checks every 5 minutes and stores monitored URLs, uptime history, and latest status in DynamoDB
+- Optimized dashboard reads from retained-history lookups to a latest-status access pattern, reducing current-status candidates from 86,400 records to 10 rows for a 10-URL, 30-day workload
+- Added state-change alerting with SNS so `UP -> DOWN` sends downtime alerts, repeated `DOWN -> DOWN` states suppress alert spam, and `DOWN -> UP` sends recovery alerts
+- Hardened API and URL intake with API keys, throttling, daily quota, restricted CORS, unsafe target blocking, redirect validation, KMS encryption, DLQs, X-Ray tracing, and access logs
+- Published 9 custom CloudWatch metrics and documented metrics formulas, runbook, failure drill, security notes, cost model, and design tradeoffs
+- GitHub Actions validates 19 Lambda unit tests, 5 React tests, frontend build, Terraform fmt/validate, Bandit security scan, and Checkov IaC scan
 
 **Tech:** Lambda, DynamoDB, API Gateway, EventBridge, SNS, S3, CloudFront, CloudWatch, Terraform, React, GitHub Actions
 
@@ -116,8 +116,8 @@ Event-driven AWS incident response workflow that turns CloudWatch alarms into st
 
 | Area | Tools and Concepts |
 |---|---|
-| Cloud | AWS, VPC, IAM, EC2, S3, Lambda, API Gateway, EventBridge, CloudWatch, SNS, DynamoDB, CloudFront, EKS, ECR, RDS, ALB, Secrets Manager |
-| Kubernetes and DevOps | Kubernetes, Amazon EKS, Helm, Docker, Terraform, GitHub Actions, CI/CD, Ingress, ConfigMaps, Secrets, readiness/liveness probes, HPA |
+| Cloud | AWS, VPC, IAM, EC2, S3, Lambda, API Gateway, EventBridge, CloudWatch, SNS, DynamoDB, CloudFront, EKS, ECR, RDS, ALB, Secrets Manager, Bedrock |
+| Infrastructure and DevOps | Terraform, Docker, Kubernetes, Amazon EKS, Helm, GitHub Actions, CI/CD, Linux, Ingress, ConfigMaps, Secrets, readiness/liveness probes, HPA |
 | Observability and SRE | CloudWatch logs, metrics, alarms, HPA, incident response, RCA, runbooks, SLA-driven troubleshooting, MTTR, SLO-style metrics |
 | Networking | TCP/IP, BGP, OSPF, MPLS, VPN, DNS, load balancing, firewalls, Juniper/Cisco routing |
 | Programming | Python, Bash, SQL, PostgreSQL, REST APIs, FastAPI, React |
@@ -126,14 +126,14 @@ Event-driven AWS incident response workflow that turns CloudWatch alarms into st
 
 ## Experience
 
-### Tata Communications, Senior Network Engineer, Shift Lead
+### Tata Communications, Senior Engineer, Shift Lead - Production NOC Operations
 
-Maintained carrier-grade network availability for global telecom and enterprise clients across Juniper, Huawei, Ciena, and Alcatel environments.
+Owned high-severity production infrastructure incidents for global telecom and enterprise clients across Juniper, Huawei, Ciena, and Alcatel environments.
 
-- Isolated BGP/MPLS routing failures, TCP/IP connectivity issues, DWDM optical transport faults, and 100G carrier circuit incidents
-- Led a 5-person global NOC shift through 40+ daily priority incidents, including P1/P2 escalations
-- Coordinated triage ownership, escalation paths, vendor communication, RCA documentation, and operational handoffs
-- Restored high-priority services within 4-hour SLA targets and earned a Certificate of Excellence for operational reliability
+- Drove triage, escalation, vendor/TAC coordination, field engineer dispatch, and service restoration across 24/7 NOC operations
+- Isolated BGP/MPLS routing failures, TCP/IP connectivity issues, DWDM optical faults, and equipment malfunctions using alarms, logs, interface status, loop testing, and segment-wise fault isolation
+- Led a 5-person global NOC shift through 40+ daily priority incidents, including AVP/VP-level escalations, RCA notes, customer-premises testing, and cross-functional follow-up
+- Restored high-priority services within 4-hour SLA targets and earned a Certificate of Excellence for carrier-grade reliability
 
 ---
 
