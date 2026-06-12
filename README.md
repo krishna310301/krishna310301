@@ -91,10 +91,11 @@ I am still using CloudOps SRE Platform as a place to practice production hardeni
 Serverless AWS uptime monitoring application with a live React dashboard.
 
 - EventBridge triggers Lambda every 5 minutes to check service availability
-- DynamoDB stores status codes, latency, and uptime history
-- SNS sends downtime alerts
+- DynamoDB stores monitored URLs, retained status history, and latest-status rows for efficient dashboard reads
+- SNS sends downtime alerts and CloudWatch tracks 9 custom application metrics
+- API Gateway uses API key enforcement, throttling, quota controls, and restricted CORS
 - S3 and CloudFront host the frontend dashboard
-- Terraform provisions AWS infrastructure and GitHub Actions automates deployment
+- Terraform provisions AWS infrastructure and GitHub Actions validates tests, frontend build, Terraform, and security scans
 
 **Tech:** Lambda, DynamoDB, API Gateway, EventBridge, SNS, S3, CloudFront, CloudWatch, Terraform, React, GitHub Actions
 
