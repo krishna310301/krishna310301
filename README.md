@@ -71,16 +71,19 @@ CloudOps SRE Platform is a cloud-native reliability operations dashboard built o
 
 ---
 
-## Currently Improving
+## Recent Production-Hardening Work
 
-I am still using CloudOps SRE Platform as a place to practice production hardening. Current roadmap items are tracked in the repo's [open issues](https://github.com/krishna310301/cloudops-sre-platform/issues).
+I use CloudOps SRE Platform as a place to practice production-style cloud hardening. Recent improvements added:
 
-- SLO/error budget tracking for service reliability views
-- Structured JSON logging and request correlation IDs
-- Release tagging and image promotion workflow
+- SLO tracking and error budget views for reliability metrics
+- Structured JSON logging with request correlation IDs
+- Alembic migrations for PostgreSQL schema changes
 - Kubernetes manifest validation in CI
+- Terraform security and cost checks in CI
+- Frontend loading/error states for failed API calls
 - RDS connectivity and secret rotation runbook
-- Optional Grafana/kube-prometheus-stack observability pass
+
+Remaining roadmap items are tracked in the repo's [open issues](https://github.com/krishna310301/cloudops-sre-platform/issues), including External Secrets/IRSA-backed secret sync, release tagging and image promotion, and an optional Grafana/kube-prometheus-stack observability pass.
 
 ---
 
@@ -93,9 +96,8 @@ Serverless AWS uptime monitoring platform with a React dashboard, state-change a
 - EventBridge triggers Lambda checks every 5 minutes and stores monitored URLs, uptime history, and latest status in DynamoDB
 - Optimized dashboard reads from retained-history lookups to a latest-status access pattern, reducing current-status candidates from 86,400 records to 10 rows for a 10-URL, 30-day workload
 - Added state-change alerting with SNS so `UP -> DOWN` sends downtime alerts, repeated `DOWN -> DOWN` states suppress alert spam, and `DOWN -> UP` sends recovery alerts
-- Hardened API and URL intake with API keys, throttling, daily quota, restricted CORS, unsafe target blocking, redirect validation, KMS encryption, DLQs, X-Ray tracing, and access logs
-- Published 9 custom CloudWatch metrics and documented metrics formulas, runbook, failure drill, security notes, cost model, and design tradeoffs
-- GitHub Actions validates 19 Lambda unit tests, 5 React tests, frontend build, Terraform fmt/validate, Bandit security scan, and Checkov IaC scan
+- Hardened API and URL intake with API keys, throttling, restricted CORS, unsafe target blocking, redirect validation, KMS encryption, DLQs, X-Ray tracing, and access logs
+- Published 9 custom CloudWatch metrics and validated the project with Lambda tests, React tests, Terraform checks, Bandit, and Checkov
 
 **Tech:** Lambda, DynamoDB, API Gateway, EventBridge, SNS, S3, CloudFront, CloudWatch, Terraform, React, GitHub Actions
 
@@ -104,9 +106,10 @@ Serverless AWS uptime monitoring platform with a React dashboard, state-change a
 Event-driven AWS incident response workflow that turns CloudWatch alarms into structured triage summaries.
 
 - CloudWatch alarms trigger Lambda through SNS
-- Lambda parses alert context and calls Amazon Bedrock
-- Bedrock assists with likely causes, severity, and remediation guidance
-- Terraform provisions Lambda, SNS, IAM, CloudWatch alarms, and Bedrock access
+- Lambda parses alert context, calculates deterministic severity, and publishes SNS incident notifications
+- Amazon Bedrock assists with likely causes and remediation guidance, with fallback handling if model output is unavailable or too generic
+- Terraform provisions EC2, Lambda, SNS, IAM, CloudWatch alarms, and Bedrock access
+- GitHub Actions runs unit tests, Terraform validation, Bandit, and Checkov; operational response notes are documented in a runbook
 
 **Tech:** AWS Lambda, CloudWatch, SNS, Amazon Bedrock, Terraform, IAM, Python, GitHub Actions
 
@@ -117,7 +120,7 @@ Event-driven AWS incident response workflow that turns CloudWatch alarms into st
 | Area | Tools and Concepts |
 |---|---|
 | Cloud | AWS, VPC, IAM, EC2, S3, Lambda, API Gateway, EventBridge, CloudWatch, SNS, DynamoDB, CloudFront, EKS, ECR, RDS, ALB, Secrets Manager, Bedrock |
-| Infrastructure and DevOps | Terraform, Docker, Kubernetes, Amazon EKS, Helm, GitHub Actions, CI/CD, Linux, Ingress, ConfigMaps, Secrets, readiness/liveness probes, HPA |
+| Infrastructure and DevOps | Terraform, Docker, Kubernetes, Amazon EKS, Helm, GitHub Actions, Git, CI/CD, Linux, Ingress, ConfigMaps, Secrets, readiness/liveness probes, HPA, k6 |
 | Observability and SRE | CloudWatch logs, metrics, alarms, HPA, incident response, RCA, runbooks, SLA-driven troubleshooting, MTTR, SLO-style metrics |
 | Networking | TCP/IP, BGP, OSPF, MPLS, VPN, DNS, load balancing, firewalls, Juniper/Cisco routing |
 | Programming | Python, Bash, SQL, PostgreSQL, REST APIs, FastAPI, React |
