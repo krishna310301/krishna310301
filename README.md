@@ -4,7 +4,7 @@
 
 ### Cloud Infrastructure Engineer | AWS, EKS/Kubernetes, Terraform, Docker, CloudWatch
 
-Production network operations shaped how I build cloud infrastructure: observable, automated, secure, and reliable by default.
+Production infrastructure operations shaped how I build cloud systems: observable, automated, secure, and reliable by default.
 
 <p>
   <a href="https://linkedin.com/in/krishna3103">LinkedIn</a>
@@ -13,7 +13,7 @@ Production network operations shaped how I build cloud infrastructure: observabl
   &nbsp;·&nbsp;
   <a href="https://github.com/krishna310301">GitHub</a>
   &nbsp;·&nbsp;
-  Austin, TX · 
+  Austin, TX
 </p>
 
 Open to Cloud Infrastructure Engineer, Cloud Engineer, Platform Engineer, Infrastructure Engineer, Associate SRE, and DevOps Engineer roles.
@@ -24,9 +24,9 @@ Open to Cloud Infrastructure Engineer, Cloud Engineer, Platform Engineer, Infras
 
 ## Why I Build Cloud Systems This Way
 
-Before moving deeper into cloud engineering, I spent 2+ years in production network operations at Tata Communications. I supported SLA-driven incident response, RCA, vendor coordination, runbooks, operational handoffs, and 24/7 troubleshooting across carrier-grade infrastructure.
+Before moving deeper into cloud engineering, I spent 2+ years in production infrastructure operations at Tata Communications. I supported SLA-driven incident response, RCA, TAC/vendor coordination, field dispatch, operational handoffs, and 24/7 troubleshooting across carrier-grade networks.
 
-That background matters because I have seen infrastructure fail in production. I have worked through BGP/MPLS routing failures, TCP/IP connectivity issues, DWDM optical transport faults, 100G circuit incidents, and multi-vendor escalations where clear ownership and clean handoffs mattered.
+That background matters because I have seen infrastructure fail in production. I have worked through BGP/MPLS routing failures, TCP/IP connectivity issues, DWDM optical transport faults, submarine cable handoffs, and multi-vendor escalations where clear ownership and clean handoffs mattered.
 
 Now I build cloud infrastructure projects with that same operations-first mindset. I care about how systems are deployed, monitored, scaled, secured, debugged, and recovered when something breaks.
 
@@ -42,7 +42,8 @@ current_focus:
 background:
   - 2+ years production network operations
   - SLA-driven incident response and RCA
-  - BGP, MPLS, TCP/IP, DWDM, 100G carrier circuits
+  - 25-30 Tier-1 carrier clients across global ILL, DWDM, and submarine cable networks
+  - BGP, MPLS, TCP/IP, DWDM, and segment-wise fault isolation
   - MS Computer Science, Indiana University Bloomington
   - AWS Certified Cloud Practitioner
 ```
@@ -53,21 +54,22 @@ background:
 
 ### [CloudOps SRE Platform](https://github.com/krishna310301/cloudops-sre-platform)
 
-CloudOps SRE Platform is a cloud-native reliability operations dashboard built on Amazon EKS. It tracks service health, deployments, incidents, incident timelines, MTTR, and SLO-style reliability metrics.
+CloudOps SRE Platform is an EKS-based reliability operations platform that centralizes service health, deployment history, incident timelines, MTTR metrics, SLO tracking, and error budget views for cloud operations workflows.
 
 ![CloudOps SRE Platform Architecture](https://raw.githubusercontent.com/krishna310301/cloudops-sre-platform/main/docs/architecture/cloudops-sre-platform-architecture.png)
 
 **What I focused on**
 
-- Amazon EKS deployment with Kubernetes Deployments, Services, ALB Ingress, Helm, resource limits, readiness/liveness probes, and HPA autoscaling
-- AWS infrastructure with Terraform: VPC, EKS, ECR, RDS PostgreSQL, IAM, Secrets Manager, security groups, and CloudWatch
-- Production-style app stack with React, FastAPI, PostgreSQL/RDS, Docker, ECR, and GitHub Actions
-- SRE product workflows: service catalog, deployment history, P1-P4 incidents, incident timelines, MTTR, health dashboard, and reliability status
-- Short-lived AWS demo run with screenshots, HPA load testing, CloudWatch logs, EKS resources, and same-day Terraform destroy for cost control
+- React and FastAPI workloads deployed behind ALB Ingress on Amazon EKS
+- Helm-managed Kubernetes deployments, services, resource limits, readiness/liveness probes, and Secrets Manager-backed database credentials
+- Terraform-managed AWS infrastructure across VPC, EKS, ECR, RDS PostgreSQL, IAM, Secrets Manager, security groups, and CloudWatch
+- SRE workflows for service catalog, deployment history, P1-P4 incidents, incident timelines, MTTR, SLO tracking, and error budget views
+- HPA validation under k6 load where backend replicas scaled from 2 to 6 pods, sustaining 2,035 requests at a 99.5% success rate with 1.52s p95 latency
+- Short-lived AWS run with EKS resources, CloudWatch logs, HPA screenshots, and same-day Terraform destroy for cost control
 
 **Tech:** AWS, EKS, Kubernetes, Helm, Terraform, Docker, ECR, RDS PostgreSQL, ALB Ingress, CloudWatch, GitHub Actions, FastAPI, React
 
-**Links:** [Repository](https://github.com/krishna310301/cloudops-sre-platform) · [Demo screenshots](https://github.com/krishna310301/cloudops-sre-platform/tree/main/docs/screenshots/aws-demo-2026-06-06) · [Architecture](https://github.com/krishna310301/cloudops-sre-platform/blob/main/docs/architecture/cloudops-sre-platform-architecture.png)
+**Links:** [Repository](https://github.com/krishna310301/cloudops-sre-platform) · [Run screenshots](https://github.com/krishna310301/cloudops-sre-platform/tree/main/docs/screenshots/aws-demo-2026-06-06) · [Architecture](https://github.com/krishna310301/cloudops-sre-platform/blob/main/docs/architecture/cloudops-sre-platform-architecture.png)
 
 ---
 
@@ -93,11 +95,10 @@ Remaining roadmap items are tracked in the repo's [open issues](https://github.c
 
 Serverless AWS uptime monitoring platform with a React dashboard, state-change alerts, CloudWatch observability, and Terraform-managed infrastructure.
 
-- EventBridge triggers Lambda checks every 5 minutes and stores monitored URLs, uptime history, and latest status in DynamoDB
-- Optimized dashboard reads from retained-history lookups to a latest-status access pattern, reducing current-status candidates from 86,400 records to 10 rows for a 10-URL, 30-day workload
-- Added state-change alerting with SNS so `UP -> DOWN` sends downtime alerts, repeated `DOWN -> DOWN` states suppress alert spam, and `DOWN -> UP` sends recovery alerts
-- Hardened API and URL intake with API keys, throttling, restricted CORS, unsafe target blocking, redirect validation, KMS encryption, DLQs, X-Ray tracing, and access logs
-- Published 9 custom CloudWatch metrics and validated the project with Lambda tests, React tests, Terraform checks, Bandit, and Checkov
+- Built on EventBridge, Lambda, DynamoDB, API Gateway, SNS, CloudWatch, Terraform, and React on S3/CloudFront
+- Optimized current-status reads from 86,400 history records to 10 latest-status rows for a 10-URL, 30-day workload
+- Added API keys, throttling, restricted CORS, KMS, DLQs, state-change alerts, 9 CloudWatch metrics, and CI quality gates
+- Hardened URL intake with unsafe target blocking and redirect validation to avoid monitoring risky internal or reserved addresses
 
 **Tech:** Lambda, DynamoDB, API Gateway, EventBridge, SNS, S3, CloudFront, CloudWatch, Terraform, React, GitHub Actions
 
@@ -131,12 +132,12 @@ Event-driven AWS incident response workflow that turns CloudWatch alarms into st
 
 ### Tata Communications, Senior Engineer, Shift Lead - Production NOC Operations
 
-Owned high-severity production infrastructure incidents for global telecom and enterprise clients across Juniper, Huawei, Ciena, and Alcatel environments.
+Owned high-severity production infrastructure incidents across 25-30 Tier-1 carrier clients on global ILL, DWDM, and submarine cable networks.
 
-- Drove triage, escalation, vendor/TAC coordination, field engineer dispatch, and service restoration across 24/7 NOC operations
-- Isolated BGP/MPLS routing failures, TCP/IP connectivity issues, DWDM optical faults, and equipment malfunctions using alarms, logs, interface status, loop testing, and segment-wise fault isolation
-- Led a 5-person global NOC shift through 40+ daily priority incidents, including AVP/VP-level escalations, RCA notes, customer-premises testing, and cross-functional follow-up
-- Restored high-priority services within 4-hour SLA targets and earned a Certificate of Excellence for carrier-grade reliability
+- Drove triage, TAC/vendor coordination, field dispatch, submarine handoffs, and service restoration across 24/7 NOC operations
+- Isolated BGP/MPLS failures, TCP/IP issues, DWDM faults, and equipment malfunctions across Juniper, Huawei, Ciena, and Alcatel platforms
+- Led 5-person global NOC shifts through 40+ daily priority incidents, including AVP/VP-level escalations, RCA notes, customer-premises testing, and cross-functional follow-up
+- Restored high-priority services within 4-hour SLA targets and contributed to 99.9% annual network availability; earned Certificate of Excellence
 
 ---
 
