@@ -2,9 +2,9 @@
 
 # Krishna Koushik Thokala
 
-### Cloud Infrastructure Engineer | AWS, EKS/Kubernetes, Terraform, Docker, CloudWatch
+### Cloud Infrastructure Engineer | AWS, EKS, Terraform, GitOps, CloudWatch
 
-Production infrastructure operations shaped how I build cloud systems: observable, automated, secure, and reliable by default.
+Production infrastructure operations shaped how I build cloud systems: observable, automated, secure, and built for recovery.
 
 <p>
   <a href="https://linkedin.com/in/krishna3103">LinkedIn</a>
@@ -34,6 +34,7 @@ Now I build cloud infrastructure projects with that same operations-first mindse
 current_focus:
   - AWS cloud infrastructure
   - Kubernetes and Amazon EKS
+  - GitOps delivery with Argo CD
   - Terraform infrastructure as code
   - Dockerized services and CI/CD
   - CloudWatch observability and incident workflows
@@ -50,11 +51,11 @@ background:
 
 ---
 
-## Featured Project
+## Featured Platform Projects
 
 ### [CloudOps SRE Platform](https://github.com/krishna310301/cloudops-sre-platform)
 
-CloudOps SRE Platform is an EKS-based reliability operations platform that centralizes service health, deployment history, incident timelines, MTTR metrics, SLO tracking, and error budget views for cloud operations workflows.
+CloudOps SRE Platform is where I moved my operations background into AWS. It runs a React/FastAPI reliability dashboard on EKS and tracks the things I wanted during live incidents: service health, deployment history, incident timelines, MTTR, SLOs, and error budget views.
 
 ![CloudOps SRE Platform Architecture](https://raw.githubusercontent.com/krishna310301/cloudops-sre-platform/main/docs/architecture/cloudops-sre-platform-architecture.png)
 
@@ -73,27 +74,32 @@ CloudOps SRE Platform is an EKS-based reliability operations platform that centr
 
 ---
 
-## Recent Production-Hardening Work
+### [CloudOps GitOps Platform](https://github.com/krishna310301/cloudops-gitops-platform)
 
-I use CloudOps SRE Platform as a place to practice production-style cloud hardening. Recent improvements added:
+CloudOps GitOps Platform builds on the SRE platform. After deploying workloads to EKS, I built the delivery path around Kubernetes: Git-managed environments, Argo CD reconciliation, promotion through pull requests, drift correction, and rollback through Git.
 
-- SLO tracking and error budget views for reliability metrics
-- Structured JSON logging with request correlation IDs
-- Alembic migrations for PostgreSQL schema changes
-- Kubernetes manifest validation in CI
-- Terraform security and cost checks in CI
-- Frontend loading/error states for failed API calls
-- RDS connectivity and secret rotation runbook
+**What I focused on**
 
-Remaining roadmap items are tracked in the repo's [open issues](https://github.com/krishna310301/cloudops-sre-platform/issues), including External Secrets/IRSA-backed secret sync, release tagging and image promotion, and an optional Grafana/kube-prometheus-stack observability pass.
+- Argo CD AppProject and multi-source Applications for `dev`, `staging`, and `prod`
+- Helm values kept outside the chart through the documented `$values/...` pattern
+- Terraform-provisioned VPC, EKS, ECR, IAM, security groups, and public subnets
+- Namespace-scoped ResourceQuotas, Roles, RoleBindings, and ServiceAccounts
+- GitHub Actions workflow for app tests, Helm rendering, Argo CD manifest rendering, image build, and optional ECR push
+- PR-style image promotion through Git-managed Helm values
+- Drift self-healing after manual replica changes and Git revert rollback after a Helm-toggled readiness failure
+- Local kind validation, EKS validation, screenshot output, and Terraform destroy after the AWS run
+
+**Tech:** AWS, EKS, Argo CD, Kubernetes, Helm, Terraform, ECR, GitHub Actions, Docker, Python
+
+**Links:** [Repository](https://github.com/krishna310301/cloudops-gitops-platform) · [Validation output](https://github.com/krishna310301/cloudops-gitops-platform/tree/main/docs/screenshots) · [Architecture](https://github.com/krishna310301/cloudops-gitops-platform/blob/main/docs/architecture.md)
 
 ---
 
-## Other Cloud Projects
+## Serverless Monitoring Project
 
 ### [CloudOps Uptime Monitor](https://github.com/krishna310301/cloudops-uptime-monitor)
 
-Serverless AWS uptime monitoring platform with a React dashboard, state-change alerts, CloudWatch observability, and Terraform-managed infrastructure.
+CloudOps Uptime Monitor shows the same operations mindset outside Kubernetes. It checks website availability every 5 minutes, stores current and historical status in DynamoDB, sends state-change alerts, and serves a React dashboard through CloudFront.
 
 - Built on EventBridge, Lambda, DynamoDB, API Gateway, SNS, CloudWatch, Terraform, and React on S3/CloudFront
 - Optimized current-status reads from 86,400 history records to 10 latest-status rows for a 10-URL, 30-day workload
@@ -102,26 +108,14 @@ Serverless AWS uptime monitoring platform with a React dashboard, state-change a
 
 **Tech:** Lambda, DynamoDB, API Gateway, EventBridge, SNS, S3, CloudFront, CloudWatch, Terraform, React, GitHub Actions
 
-### [AWS Incident Triage Pipeline](https://github.com/krishna310301/aws-incident-triage-pipeline)
-
-Event-driven AWS incident response workflow that turns CloudWatch alarms into structured triage summaries.
-
-- CloudWatch alarms trigger Lambda through SNS
-- Lambda parses alert context, calculates deterministic severity, and publishes SNS incident notifications
-- Amazon Bedrock assists with likely causes and remediation guidance, with fallback handling if model output is unavailable or too generic
-- Terraform provisions EC2, Lambda, SNS, IAM, CloudWatch alarms, and Bedrock access
-- GitHub Actions runs unit tests, Terraform validation, Bandit, and Checkov; operational response notes are documented in a runbook
-
-**Tech:** AWS Lambda, CloudWatch, SNS, Amazon Bedrock, Terraform, IAM, Python, GitHub Actions
-
 ---
 
 ## Technical Focus
 
 | Area | Tools and Concepts |
 |---|---|
-| Cloud | AWS, VPC, IAM, EC2, S3, Lambda, API Gateway, EventBridge, CloudWatch, SNS, DynamoDB, CloudFront, EKS, ECR, RDS, ALB, Secrets Manager, Bedrock |
-| Infrastructure and DevOps | Terraform, Docker, Kubernetes, Amazon EKS, Helm, GitHub Actions, Git, CI/CD, Linux, Ingress, ConfigMaps, Secrets, readiness/liveness probes, HPA, k6 |
+| Cloud | AWS, VPC, IAM, EC2, S3, Lambda, API Gateway, EventBridge, CloudWatch, SNS, DynamoDB, CloudFront, EKS, ECR, RDS, ALB, Secrets Manager |
+| Infrastructure and DevOps | Terraform, Docker, Kubernetes, Amazon EKS, Helm, Argo CD, GitOps, GitHub Actions, Git, CI/CD, Linux, Ingress, ConfigMaps, Secrets, readiness/liveness probes, HPA, k6 |
 | Observability and SRE | CloudWatch logs, metrics, alarms, HPA, incident response, RCA, runbooks, SLA-driven troubleshooting, MTTR, SLO-style metrics |
 | Networking | TCP/IP, BGP, OSPF, MPLS, VPN, DNS, load balancing, firewalls, Juniper/Cisco routing |
 | Programming | Python, Bash, SQL, PostgreSQL, REST APIs, FastAPI, React |
