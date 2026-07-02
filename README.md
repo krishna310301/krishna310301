@@ -23,11 +23,12 @@ AWS Certified Solutions Architect - Associate · MS Computer Science, Indiana Un
 
 ## Engineering Focus
 
-I build AWS infrastructure projects around the parts that matter after deployment: delivery control, observability, failure recovery, access boundaries, cost cleanup, and operational evidence.
+I build AWS infrastructure projects around deployment control, observability, failure recovery, access boundaries, and cost-aware infrastructure lifecycle management.
 
-Before moving deeper into cloud infrastructure, I worked in 24/7 production NOC operations at Tata Communications, supporting SLA-driven incident response for Tier-1 carrier clients. That background shaped how I approach cloud systems: clear ownership, reliable runbooks, observable services, and clean rollback paths.
+Before moving deeper into cloud infrastructure, I worked in 24/7 production NOC operations at Tata Communications, supporting SLA-driven incident response for Tier-1 carrier clients. That work shaped how I approach cloud systems: clear ownership, reliable runbooks, observable services, and clean rollback paths.
 
 Focus:
+
 - AWS infrastructure with Terraform
 - Kubernetes workloads on Amazon EKS
 - GitOps delivery with Argo CD and Helm
@@ -36,10 +37,13 @@ Focus:
 - SRE workflows, incident response, and rollback validation
 
 Operations background:
+
 - 2+ years production network operations
 - 25-30 Tier-1 carrier clients
 - SLA-driven triage, escalation, RCA, and service restoration
 - BGP, MPLS, TCP/IP, DWDM, and segment-wise fault isolation
+
+---
 
 ## Featured Projects
 
@@ -47,9 +51,10 @@ Operations background:
 
 GitOps delivery platform on Amazon EKS using Argo CD, Helm, Terraform, GitHub Actions, ECR, Prometheus, Grafana, and AWS Budgets.
 
-Built to validate how Kubernetes changes move through Git-managed environments, how Argo CD detects drift, how failed releases recover through Git, and how short-lived AWS validation environments are cleaned up.
+Built to validate how Kubernetes changes move through Git-managed environments, how Argo CD detects drift, how failed releases recover through Git, and how AWS validation environments are managed with cost controls.
 
 Implemented:
+
 - Argo CD AppProjects and multi-source Applications for `dev`, `staging`, `prod`, and `observability`
 - Git-managed Helm values for namespace-isolated dev/staging/prod environments
 - Terraform-managed AWS foundation across VPC, EKS, ECR, IAM, and AWS Budgets
@@ -58,15 +63,16 @@ Implemented:
 - Drift self-healing after manual replica changes
 - Git revert rollback after a Helm-controlled readiness failure
 - Argo CD-managed Prometheus/Grafana observability with app ServiceMonitor targets
-- Same-day Terraform destroy with empty state, AWS not-found checks, and project tag sweep
+- Same-day Terraform destroy with empty state, AWS resource checks, and project tag sweep
 
 Validation evidence:
+
 - 20 AWS resources created and destroyed with Terraform
 - 4 Argo CD Applications reached `Synced` and `Healthy` on real EKS
 - Prometheus scraped app metrics across dev/staging/prod
 - Grafana dashboard captured workload health, replicas, CPU, memory, request rate, and app health
 - ECR image tags validated for all environments
-- AWS Budget created through Terraform and destroyed during cleanup
+- AWS Budget created through Terraform and removed during cleanup
 
 Tech: EKS, Argo CD, Helm, Terraform, GitHub Actions, ECR, Docker, Prometheus, Grafana, AWS Budgets, Kubernetes RBAC
 
@@ -78,17 +84,19 @@ Links: [Repository](https://github.com/krishna310301/cloudops-gitops-platform) �
 
 SRE operations platform on Amazon EKS for service health, deployment history, incident timelines, MTTR, SLO tracking, and error budget views.
 
-Built as an operations-focused application to model the workflows I used in production support: service ownership, incident state, deployment visibility, reliability metrics, and validation under load.
+Built to model the workflows used during production support: service ownership, incident state, deployment visibility, reliability metrics, and validation under load.
 
 Implemented:
+
 - React and FastAPI workloads deployed behind ALB Ingress on Amazon EKS
 - Helm-managed Kubernetes deployments, services, resource limits, liveness/readiness probes, and Secrets Manager-backed database credentials
 - Terraform-managed AWS infrastructure across VPC, EKS, ECR, RDS PostgreSQL, IAM, Secrets Manager, security groups, and CloudWatch
 - Service catalog, incident workflow, deployment history, MTTR calculation, SLO tracking, and error budget views
 - Structured logging, request correlation IDs, Alembic migrations, Terraform validation, and CI quality gates
-- Short-lived AWS validation run with screenshots and same-day Terraform destroy
+- AWS validation run with screenshots and same-day Terraform destroy
 
 Validation evidence:
+
 - HPA scaled backend replicas from 2 to 6 under k6 load
 - Processed 2,035 requests at a 99.5% success rate
 - Measured 1.52s p95 latency
@@ -105,6 +113,7 @@ Links: [Repository](https://github.com/krishna310301/cloudops-sre-platform) · [
 Serverless uptime monitoring platform that checks website availability, stores current and historical status, sends state-change alerts, and serves a React dashboard through CloudFront.
 
 Implemented:
+
 - EventBridge-scheduled Lambda checks every 5 minutes
 - DynamoDB status history and latest-status access pattern
 - API Gateway endpoints with API keys, throttling, restricted CORS, and request validation
@@ -113,6 +122,7 @@ Implemented:
 - GitHub Actions validation for Lambda tests, React build, Terraform validation, Bandit, Checkov, S3 sync, and CloudFront invalidation
 
 Validation evidence:
+
 - Optimized current-status reads from 86,400 history records to 10 latest-status rows for a 10-URL, 30-day workload
 - Published 9 custom CloudWatch metrics
 - Hardened URL intake with unsafe target blocking and redirect validation
@@ -133,6 +143,8 @@ Links: [Repository](https://github.com/krishna310301/cloudops-uptime-monitor)
 | Networking | TCP/IP, DNS, BGP, MPLS, VPN, load balancing, firewalls, network security, DWDM |
 | Programming | Python, SQL, PostgreSQL, REST APIs, FastAPI, React |
 
+---
+
 ## Production Operations Background
 
 ### Tata Communications - Senior Engineer, Shift Lead
@@ -146,11 +158,15 @@ Supported 24/7 production NOC operations for 25-30 Tier-1 carrier clients across
 - Supported 99.9% annual network availability and restored high-priority services within 4-hour SLA targets
 - Earned Certificate of Excellence
 
+---
+
 ## Education and Certifications
 
 - AWS Certified Solutions Architect - Associate, 2026
 - MS Computer Science, Indiana University Bloomington, May 2026
 - B.Tech Computer Science and Engineering, SRM Institute of Science and Technology
+
+---
 
 ## GitHub Activity
 
