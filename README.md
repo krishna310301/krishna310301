@@ -49,7 +49,7 @@ Operations background:
 
 ### [CloudOps GitOps Platform](https://github.com/krishna310301/cloudops-gitops-platform)
 
-GitOps delivery platform on Amazon EKS using Argo CD, Helm, Terraform, GitHub Actions, ECR, Prometheus, Grafana, and AWS Budgets.
+EKS GitOps delivery platform using Argo CD, Helm, Terraform, GitHub Actions, ECR, Prometheus, Grafana, and AWS Budgets.
 
 Built to validate how Kubernetes changes move through Git-managed environments, how Argo CD detects drift, how failed releases recover through Git, and how AWS validation environments are managed with cost controls.
 
@@ -65,7 +65,7 @@ Implemented:
 - Argo CD-managed Prometheus/Grafana observability with app ServiceMonitor targets
 - Same-day Terraform destroy with empty state, AWS resource checks, and project tag sweep
 
-Validation evidence:
+Run results:
 
 - 20 AWS resources created and destroyed with Terraform
 - 4 Argo CD Applications reached `Synced` and `Healthy` on real EKS
@@ -82,7 +82,7 @@ Links: [Repository](https://github.com/krishna310301/cloudops-gitops-platform) Â
 
 ### [CloudOps SRE Platform](https://github.com/krishna310301/cloudops-sre-platform)
 
-SRE operations platform on Amazon EKS for service health, deployment history, incident timelines, MTTR, SLO tracking, and error budget views.
+EKS SRE operations platform for service health, deployment history, incident timelines, MTTR, SLO tracking, and error budget views.
 
 Built to model the workflows used during production support: service ownership, incident state, deployment visibility, reliability metrics, and validation under load.
 
@@ -95,7 +95,7 @@ Implemented:
 - Structured logging, request correlation IDs, Alembic migrations, Terraform validation, and CI quality gates
 - AWS validation run with screenshots and same-day Terraform destroy
 
-Validation evidence:
+Run results:
 
 - HPA scaled backend replicas from 2 to 6 under k6 load
 - Processed 2,035 requests at a 99.5% success rate
@@ -121,7 +121,7 @@ Implemented:
 - KMS encryption, DLQs, X-Ray tracing, access logs, CloudWatch dashboards, and log retention
 - GitHub Actions validation for Lambda tests, React build, Terraform validation, Bandit, Checkov, S3 sync, and CloudFront invalidation
 
-Validation evidence:
+Run results:
 
 - Optimized current-status reads from 86,400 history records to 10 latest-status rows for a 10-URL, 30-day workload
 - Published 9 custom CloudWatch metrics
