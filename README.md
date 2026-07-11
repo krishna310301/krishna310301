@@ -131,7 +131,7 @@ Run results:
 
 Tech: Lambda, DynamoDB, API Gateway, EventBridge, SNS, S3, CloudFront, CloudWatch, Terraform, React, GitHub Actions, IAM, KMS, X-Ray
 
-Links: [Repository](https://github.com/krishna310301/cloudops-uptime-monitor) · [Failure Drill](https://github.com/krishna310301/cloudops-uptime-monitor/blob/main/docs/failure-drill.md)
+Links: [Repository](https://github.com/krishna310301/cloudops-uptime-monitor) · [Live Dashboard](https://d3hlcf532b9plq.cloudfront.net) · [Failure Drill](https://github.com/krishna310301/cloudops-uptime-monitor/blob/main/docs/failure-drill.md)
 
 ---
 
