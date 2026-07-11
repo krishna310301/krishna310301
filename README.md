@@ -59,7 +59,8 @@ Implemented:
 - Git-managed Helm values for namespace-isolated dev/staging/prod environments
 - Terraform-managed AWS foundation across VPC, EKS, ECR, IAM, and AWS Budgets
 - ResourceQuotas, scoped RBAC, ServiceAccounts, probes, resource limits, and hardened pod security settings
-- GitHub Actions workflows for tests, Helm rendering, Argo CD manifest rendering, image build, ECR publishing, and PR-style promotion
+- GitHub Actions workflows for tests, manifest validation, immutable commit-SHA image publishing, and PR-based environment promotion
+- Repository-scoped GitHub OIDC role for ECR publishing without long-lived AWS access keys
 - Drift self-healing after manual replica changes
 - Git revert rollback after a Helm-controlled readiness failure
 - Argo CD-managed Prometheus/Grafana observability with app ServiceMonitor targets
@@ -82,7 +83,7 @@ Links: [Repository](https://github.com/krishna310301/cloudops-gitops-platform) Â
 
 ### [CloudOps SRE Platform](https://github.com/krishna310301/cloudops-sre-platform)
 
-EKS SRE operations platform for service health, deployment history, incident timelines, MTTR, SLO tracking, and error budget views.
+EKS SRE operations platform for service health, deployment history, incident timelines, MTTR, and simplified SLO-style reliability views.
 
 Built to model the workflows used during production support: service ownership, incident state, deployment visibility, reliability metrics, and validation under load.
 
@@ -91,8 +92,8 @@ Implemented:
 - React and FastAPI workloads deployed behind ALB Ingress on Amazon EKS
 - Helm-managed Kubernetes deployments, services, resource limits, liveness/readiness probes, and Secrets Manager-backed database credentials
 - Terraform-managed AWS infrastructure across VPC, EKS, ECR, RDS PostgreSQL, IAM, Secrets Manager, security groups, and CloudWatch
-- Service catalog, incident workflow, deployment history, MTTR calculation, SLO tracking, and error budget views
-- Structured logging, request correlation IDs, Alembic migrations, Terraform validation, and CI quality gates
+- Service catalog, incident workflow, deployment history, MTTR calculation, and simplified error-budget views
+- Structured logging, request correlation IDs, Alembic migrations, backend unit tests, frontend and container builds, Helm lint, Kubernetes schema validation, Terraform format/validate, cost guardrails, and advisory Checkov scanning
 - AWS validation run with screenshots and same-day Terraform destroy
 
 Run results:
@@ -116,20 +117,21 @@ Implemented:
 
 - EventBridge-scheduled Lambda checks every 5 minutes
 - DynamoDB status history and latest-status access pattern
-- API Gateway endpoints with API keys, throttling, restricted CORS, and request validation
+- Public read-only dashboard routes with API Gateway key-based quotas, throttling, GET-only CORS, and request validation
 - SNS downtime and recovery alerts with state-change suppression
 - KMS encryption, DLQs, X-Ray tracing, access logs, CloudWatch dashboards, and log retention
 - GitHub Actions validation for Lambda tests, React build, Terraform validation, Bandit, Checkov, S3 sync, and CloudFront invalidation
 
 Run results:
 
-- Optimized current-status reads from 86,400 history records to 10 latest-status rows for a 10-URL, 30-day workload
+- Designed a latest-status access pattern that reads 10 current-state rows instead of scanning up to 86,400 monthly history rows for a 10-URL reference workload
 - Published 9 custom CloudWatch metrics
 - Hardened URL intake with unsafe target blocking and redirect validation
+- A controlled outage drill detected failure in 1 second, showed the DOWN state within 26 seconds, suppressed duplicate DOWN alerts, and confirmed recovery
 
 Tech: Lambda, DynamoDB, API Gateway, EventBridge, SNS, S3, CloudFront, CloudWatch, Terraform, React, GitHub Actions, IAM, KMS, X-Ray
 
-Links: [Repository](https://github.com/krishna310301/cloudops-uptime-monitor)
+Links: [Repository](https://github.com/krishna310301/cloudops-uptime-monitor) Â· [Failure Drill](https://github.com/krishna310301/cloudops-uptime-monitor/blob/main/docs/failure-drill.md)
 
 ---
 
