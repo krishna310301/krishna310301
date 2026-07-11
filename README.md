@@ -10,11 +10,13 @@ AWS Certified Solutions Architect - Associate · MS Computer Science, Indiana Un
 <p>
   <a href="https://linkedin.com/in/krishna3103">LinkedIn</a>
   &nbsp;·&nbsp;
-  <a href="mailto:krishnakoushikthokala@gmail.com">krishnakoushikthokala@gmail.com</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/krishna310301">GitHub</a>
-  &nbsp;·&nbsp;
   <a href="https://krishna310301.github.io">Portfolio</a>
+  &nbsp;·&nbsp;
+  <a href="https://krishna310301.github.io/assets/Krishna_Koushik_Resume.pdf">Resume</a>
+  &nbsp;·&nbsp;
+  <a href="https://www.credly.com/badges/97f0c690-8ec1-4a22-b1d1-7d33ae91a1c5/public_url">AWS Credential</a>
+  &nbsp;·&nbsp;
+  <a href="mailto:krishnakoushikthokala@gmail.com">Email</a>
 </p>
 
 </div>
@@ -23,25 +25,14 @@ AWS Certified Solutions Architect - Associate · MS Computer Science, Indiana Un
 
 ## Engineering Focus
 
-I build AWS infrastructure projects around deployment control, observability, failure recovery, access boundaries, and cost-aware infrastructure lifecycle management.
-
-Before moving deeper into cloud infrastructure, I worked in 24/7 production NOC operations at Tata Communications, supporting SLA-driven incident response for Tier-1 carrier clients. That work shaped how I approach cloud systems: clear ownership, reliable runbooks, observable services, and clean rollback paths.
+I build AWS infrastructure projects around deployment control, observability, failure recovery, access boundaries, and cost-aware lifecycle management. My approach is grounded in 2+ years of SLA-driven production NOC operations at Tata Communications.
 
 Focus:
 
-- AWS infrastructure with Terraform
-- Kubernetes workloads on Amazon EKS
-- GitOps delivery with Argo CD and Helm
-- CI/CD with GitHub Actions
-- Observability with Prometheus, Grafana, and CloudWatch
-- SRE workflows, incident response, and rollback validation
-
-Operations background:
-
-- 2+ years production network operations
-- 25-30 Tier-1 carrier clients
-- SLA-driven triage, escalation, RCA, and service restoration
-- BGP, MPLS, TCP/IP, DWDM, and segment-wise fault isolation
+- AWS infrastructure with Terraform and GitHub Actions
+- Kubernetes delivery on Amazon EKS with Helm and Argo CD
+- Observability with CloudWatch, Prometheus, and Grafana
+- Incident response, failure recovery, and rollback validation
 
 ---
 
@@ -53,27 +44,10 @@ EKS GitOps delivery platform using Argo CD, Helm, Terraform, GitHub Actions, ECR
 
 Built to validate how Kubernetes changes move through Git-managed environments, how Argo CD detects drift, how failed releases recover through Git, and how AWS validation environments are managed with cost controls.
 
-Implemented:
-
-- Argo CD AppProjects and multi-source Applications for `dev`, `staging`, `prod`, and `observability`
-- Git-managed Helm values for namespace-isolated dev/staging/prod environments
-- Terraform-managed AWS foundation across VPC, EKS, ECR, IAM, and AWS Budgets
-- ResourceQuotas, scoped RBAC, ServiceAccounts, probes, resource limits, and hardened pod security settings
-- GitHub Actions workflows for tests, manifest validation, immutable commit-SHA image publishing, and PR-based environment promotion
-- Repository-scoped GitHub OIDC role for ECR publishing without long-lived AWS access keys
-- Drift self-healing after manual replica changes
-- Git revert rollback after a Helm-controlled readiness failure
-- Argo CD-managed Prometheus/Grafana observability with app ServiceMonitor targets
-- Same-day Terraform destroy with empty state, AWS resource checks, and project tag sweep
-
-Run results:
-
-- 20 AWS resources created and destroyed with Terraform
-- 4 Argo CD Applications reached `Synced` and `Healthy` on real EKS
-- Prometheus scraped app metrics across dev/staging/prod
-- Grafana dashboard captured workload health, replicas, CPU, memory, request rate, and app health
-- ECR image tags validated for all environments
-- AWS Budget created through Terraform and removed during cleanup
+- Managed `dev`, `staging`, `prod`, and observability through Argo CD multi-source Applications and Git-managed Helm values
+- Added namespace quotas, scoped RBAC, NetworkPolicies, hardened pod settings, commit-SHA image validation, and a repository-scoped GitHub OIDC role definition
+- Validated drift self-healing and Git-revert recovery after a readiness failure on a short-lived EKS environment
+- Brought 4 Argo CD Applications to `Synced` and `Healthy`, observed workloads with Prometheus/Grafana, and destroyed 20 Terraform-managed AWS resources after validation
 
 Tech: EKS, Argo CD, Helm, Terraform, GitHub Actions, ECR, Docker, Prometheus, Grafana, AWS Budgets, Kubernetes RBAC
 
@@ -87,21 +61,10 @@ EKS SRE operations platform for service health, deployment history, incident tim
 
 Built to model the workflows used during production support: service ownership, incident state, deployment visibility, reliability metrics, and validation under load.
 
-Implemented:
-
-- React and FastAPI workloads deployed behind ALB Ingress on Amazon EKS
-- Helm-managed Kubernetes deployments, services, resource limits, liveness/readiness probes, and Secrets Manager-backed database credentials
-- Terraform-managed AWS infrastructure across VPC, EKS, ECR, RDS PostgreSQL, IAM, Secrets Manager, security groups, and CloudWatch
-- Service catalog, incident workflow, deployment history, MTTR calculation, and simplified error-budget views
-- Structured logging, request correlation IDs, Alembic migrations, backend unit tests, frontend and container builds, Helm lint, Kubernetes schema validation, Terraform format/validate, cost guardrails, and advisory Checkov scanning
-- AWS validation run with screenshots and same-day Terraform destroy
-
-Run results:
-
-- HPA scaled backend replicas from 2 to 6 under k6 load
-- Processed 2,035 requests at a 99.5% success rate
-- Measured 1.52s p95 latency
-- Confirmed scaling through HPA status and CloudWatch logs
+- Deployed React and FastAPI workloads behind ALB Ingress with Helm, probes, resource limits, RDS PostgreSQL, and Secrets Manager-backed credentials
+- Provisioned VPC, EKS, ECR, RDS, IAM, security groups, and CloudWatch integration with Terraform
+- Implemented service, deployment, incident, MTTR, and simplified SLO-style reliability views with structured logs and request IDs
+- Validated HPA scale-out from 2 to 6 backend pods under k6 load: 2,035 requests, 99.5% success, and 1.52s p95 latency
 
 Tech: EKS, Kubernetes, Helm, Terraform, Docker, ECR, RDS PostgreSQL, ALB Ingress, CloudWatch, GitHub Actions, FastAPI, React
 
@@ -113,21 +76,10 @@ Links: [Repository](https://github.com/krishna310301/cloudops-sre-platform) · [
 
 Serverless uptime monitoring platform that checks website availability, stores current and historical status, sends state-change alerts, and serves a React dashboard through CloudFront.
 
-Implemented:
-
-- EventBridge-scheduled Lambda checks every 5 minutes
-- DynamoDB status history and latest-status access pattern
-- Public read-only dashboard routes with API Gateway key-based quotas, throttling, GET-only CORS, and request validation
-- SNS downtime and recovery alerts with state-change suppression
-- KMS encryption, DLQs, X-Ray tracing, access logs, CloudWatch dashboards, and log retention
-- GitHub Actions validation for Lambda tests, React build, Terraform validation, Bandit, Checkov, S3 sync, and CloudFront invalidation
-
-Run results:
-
-- Designed a latest-status access pattern that reads 10 current-state rows instead of scanning up to 86,400 monthly history rows for a 10-URL reference workload
-- Published 9 custom CloudWatch metrics
-- Hardened URL intake with unsafe target blocking and redirect validation
-- A controlled outage drill detected failure in 1 second, showed the DOWN state within 26 seconds, suppressed duplicate DOWN alerts, and confirmed recovery
+- Scheduled Lambda checks with EventBridge, stored history and current state in DynamoDB, and sent state-change alerts through SNS
+- Added API keys, quotas, throttling, restricted CORS, KMS, DLQs, X-Ray, unsafe-target blocking, and redirect validation
+- Designed a latest-status access pattern that reduces candidate records from 86,400 history rows to 10 current-state rows for a 10-URL, 30-day reference workload
+- Published 9 CloudWatch metrics and completed an outage drill with 1-second detection, 26-second dashboard visibility, recovery notification, and no duplicate DOWN alerts
 
 Tech: Lambda, DynamoDB, API Gateway, EventBridge, SNS, S3, CloudFront, CloudWatch, Terraform, React, GitHub Actions, IAM, KMS, X-Ray
 
@@ -139,10 +91,10 @@ Links: [Repository](https://github.com/krishna310301/cloudops-uptime-monitor) ·
 
 | Area | Tools |
 |---|---|
-| Cloud | AWS, VPC, IAM, EC2, S3, Lambda, API Gateway, EventBridge, DynamoDB, RDS, EKS, ECR, ALB, CloudFront, SNS, Secrets Manager, CloudWatch, KMS, AWS Budgets |
-| Infrastructure | Terraform, Docker, Kubernetes, Helm, Argo CD, GitOps, GitHub Actions, Linux, Bash |
-| Observability and SRE | Prometheus, Grafana, CloudWatch Logs/Metrics/Alarms, HPA, k6, incident response, RCA, runbooks, SLO/SLA, MTTR |
-| Networking | TCP/IP, DNS, BGP, MPLS, VPN, load balancing, firewalls, network security, DWDM |
+| Cloud | AWS, VPC, IAM, EKS, ECR, RDS, Lambda, DynamoDB, CloudWatch |
+| Infrastructure | Terraform, Docker, Kubernetes, Helm, Argo CD, GitHub Actions |
+| Reliability | HPA, probes, structured logging, alerting, k6, incident response, RCA, runbooks |
+| Networking | TCP/IP, DNS, BGP, MPLS, load balancing, firewalls, DWDM |
 | Programming | Python, SQL, PostgreSQL, REST APIs, FastAPI, React |
 
 ---
@@ -164,7 +116,7 @@ Supported 24/7 production NOC operations for 25-30 Tier-1 carrier clients across
 
 ## Education and Certifications
 
-- AWS Certified Solutions Architect - Associate, 2026
+- [AWS Certified Solutions Architect - Associate](https://www.credly.com/badges/97f0c690-8ec1-4a22-b1d1-7d33ae91a1c5/public_url), 2026
 - MS Computer Science, Indiana University Bloomington, May 2026
 - B.Tech Computer Science and Engineering, SRM Institute of Science and Technology
 
