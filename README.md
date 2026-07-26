@@ -64,7 +64,7 @@ An SRE operations platform on Amazon EKS covering service health, deployment his
 A Git-as-source-of-truth delivery platform on EKS — built to validate how Kubernetes changes move between environments, how Argo CD detects and corrects drift, and how a failed release recovers through Git alone.
 
 - Composed the AWS foundation as **15 reusable Terraform modules** provisioning VPC, EKS, ECR, and IAM, under a **$25 monthly AWS Budget** guardrail scoped to the short-lived validation environment
-- Ran **4 Argo CD Applications** across `dev`, `staging`, `prod`, and `observability` namespaces under 2 AppProjects, each namespace isolated by scoped RBAC, NetworkPolicies, and ResourceQuotas
+- Ran **4 Argo CD Applications** across the `cloudops-dev`, `cloudops-staging`, `cloudops-prod`, and `cloudops-observability` namespaces under 2 AppProjects, with per-namespace RBAC and ResourceQuotas on all four and NetworkPolicies on the three application namespaces
 - Built a **four-gate promotion pipeline**: the workflow rejects any tag that is not a verified 12-character commit SHA, confirms the commit exists in Git via `git cat-file`, confirms the image exists in ECR via `describe-images`, authenticates through a branch-scoped GitHub OIDC role with no stored AWS credentials, and lands every promotion as a reviewable pull request
 - Validated **drift self-healing and Git-revert recovery** after an injected readiness failure on a live EKS cluster, then tore down all 20 Terraform-managed resources
 - Brought all Applications to `Synced` and `Healthy`, with workloads observed through Prometheus and Grafana
