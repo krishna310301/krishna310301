@@ -2,10 +2,10 @@
 
 # Krishna Koushik Thokala
 
-### Infrastructure Operations Engineer | AWS · EKS · Terraform · GitOps · Observability
+### Infrastructure Engineer | AWS · Kubernetes · Terraform · GitOps · Observability
 
-Austin, TX · AWS Certified Solutions Architect – Associate · MS Computer Science, Indiana University Bloomington<br>
-2 years of production NOC operations supporting Tier-1 carrier infrastructure
+Austin, TX · AWS Certified Solutions Architect – Associate · MS Computer Science, Indiana University Bloomington  
+2+ years of production network operations experience supporting Tier-1 carrier infrastructure
 
 <p>
   <a href="https://linkedin.com/in/krishna3103">LinkedIn</a>
@@ -13,8 +13,6 @@ Austin, TX · AWS Certified Solutions Architect – Associate · MS Computer Sci
   <a href="https://krishna310301.github.io">Portfolio</a>
   &nbsp;·&nbsp;
   <a href="https://krishna310301.github.io/assets/Krishna_Koushik_Resume.pdf">Resume</a>
-  &nbsp;·&nbsp;
-  <a href="https://d3hlcf532b9plq.cloudfront.net">Live Dashboard</a>
   &nbsp;·&nbsp;
   <a href="https://www.credly.com/badges/97f0c690-8ec1-4a22-b1d1-7d33ae91a1c5/public_url">AWS Credential</a>
   &nbsp;·&nbsp;
@@ -25,64 +23,66 @@ Austin, TX · AWS Certified Solutions Architect – Associate · MS Computer Sci
 
 ---
 
-## Engineering Focus
+## About
 
-I build and validate AWS infrastructure around deployment control, measurable reliability, access boundaries, and cost-aware lifecycle management. That approach comes from two years of SLA-driven production NOC operations at Tata Communications, where incident prioritization, restoration commitments, and customer communication were daily responsibilities.
+I am an infrastructure engineer with 2+ years of production network operations experience in 24/7 Tier-1 carrier environments, including incident response, change execution, root cause analysis, and SLA-driven restoration.
 
-Two operating principles shape the work in these repositories:
+I now apply that operations foundation to hands-on AWS infrastructure: Terraform-managed EKS and serverless systems, GitOps/CI/CD delivery, Python automation, and Prometheus/CloudWatch observability.
 
-**Measure what users experience.** Reliability indicators are scoped to user-facing routes and exclude health, metrics, and load-generation traffic.
+My projects emphasize two principles:
 
-**State what the evidence does not prove.** Controlled validation runs publish their limitations alongside their results rather than presenting short tests as production-scale evidence.
+**Measure what users experience.** Reliability indicators should represent meaningful application behavior rather than simply proving that infrastructure exists.
 
-**Focus:** Terraform-provisioned AWS foundations · Kubernetes delivery on EKS with Helm and Argo CD · Python automation · Prometheus and CloudWatch observability · incident response · failure and rollback validation
+**State what the evidence proves.** Validation runs document their scope and limitations instead of presenting short-lived tests as production-scale results.
+
+**Core stack:** AWS · Terraform · Kubernetes · Docker · Helm · Argo CD · GitHub Actions · Python · Linux · Prometheus · Grafana · CloudWatch
 
 ---
 
 ## Featured Projects
 
-### [EKS Reliability Platform](https://github.com/krishna310301/cloudops-sre-platform) &nbsp;<sub>`cloudops-sre-platform`</sub>
+### [EKS Reliability Platform](https://github.com/krishna310301/cloudops-sre-platform)
 
-An EKS reliability-operations platform for service health, deployment history, incident timelines, MTTR, and request-based SLIs, modeled after workflows used in production support.
+Reliability-operations platform deployed on AWS EKS for service health, incidents, deployments, MTTR, SLOs, and error budgets.
 
-- Provisioned a **59-resource AWS foundation** with Terraform, including a three-tier VPC, managed EKS, RDS PostgreSQL, ECR, Secrets Manager, IRSA, ALB ingress, and CloudWatch monitoring
-- Implemented **6 Prometheus recording rules** and multi-window burn-rate alerts against a 99.9% SLO; verified behavior through **5 promtool cases and 12 assertions**
-- Load-tested the Python/FastAPI backend with k6: HPA scaled **2 → 6 replicas across 18,819 requests with zero failed requests or pod restarts**, then returned to baseline
-- Published SHA-256-attested validation evidence and verified teardown across 14 service checks, explicitly recording one inconclusive tagging check rather than reporting it as passed
+- Provisioned the AWS foundation with **Terraform**, including VPC networking, EKS, ECR, private RDS PostgreSQL, IAM, Secrets Manager, and CloudWatch
+- Implemented request-based availability and latency SLIs with **Prometheus** and multi-window burn-rate alerts against a **99.9% SLO**, with rule behavior tested in CI
+- Validated HPA elasticity with **18,819 k6 requests**: the backend scaled **2 → 6 → 2 replicas with zero request failures and zero pod restarts**
+- Documented deployment, observability, validation, teardown, and known limitations as reproducible engineering evidence
 
-**Tech:** AWS · EKS · Terraform · Helm · Python/FastAPI · Prometheus · RDS PostgreSQL · ECR · IRSA · ALB · CloudWatch · k6 · GitHub Actions · Checkov · kubeconform
+**Tech:** AWS · EKS · Terraform · Helm · Python/FastAPI · Prometheus · Grafana · RDS · ECR · CloudWatch · k6 · GitHub Actions
 
-**Evidence:** [Repository](https://github.com/krishna310301/cloudops-sre-platform) · [Validation Run](https://github.com/krishna310301/cloudops-sre-platform/tree/main/docs/evidence/aws-validation-2026-07-25) · [SLI Rules](https://github.com/krishna310301/cloudops-sre-platform/blob/main/charts/cloudops-sre-platform/rules/cloudops-sli-rules.yaml) · [Burn-Rate Runbook](https://github.com/krishna310301/cloudops-sre-platform/blob/main/docs/availability-burn-rate-runbook.md) · [Architecture](https://github.com/krishna310301/cloudops-sre-platform/blob/main/docs/architecture.md)
-
----
-
-### [GitOps Delivery Platform](https://github.com/krishna310301/cloudops-gitops-platform) &nbsp;<sub>`cloudops-gitops-platform`</sub>
-
-An EKS delivery platform that keeps Git as the source of truth for promotion, drift correction, and rollback.
-
-- Composed the AWS foundation as **15 reusable Terraform modules** for VPC, EKS, ECR, and IAM, with a **$25 monthly AWS Budget** guardrail for the validation environment
-- Reconciled **4 Argo CD Applications** across dev, staging, prod, and observability namespaces with scoped RBAC, ResourceQuotas, and Network Policies
-- Secured promotion through a **four-gate GitHub Actions workflow** that validates Git and ECR provenance, authenticates through branch-scoped OIDC without stored AWS credentials, and delivers changes through pull requests
-- Validated drift self-healing and Git-revert recovery after an injected readiness failure on a live EKS cluster
-
-**Tech:** AWS · EKS · Argo CD · Terraform · Helm · GitHub Actions · OIDC · ECR · Docker · Prometheus · Grafana · AWS Budgets · Kubernetes RBAC
-
-**Evidence:** [Repository](https://github.com/krishna310301/cloudops-gitops-platform) · [AWS Validation](https://github.com/krishna310301/cloudops-gitops-platform/blob/main/docs/aws-validation-results.md) · [Promotion Workflow](https://github.com/krishna310301/cloudops-gitops-platform/blob/main/docs/promotion-workflow.md) · [Rollback Demo](https://github.com/krishna310301/cloudops-gitops-platform/blob/main/docs/rollback-demo.md) · [Drift Detection](https://github.com/krishna310301/cloudops-gitops-platform/blob/main/docs/drift-detection-demo.md)
+**Explore:** [Repository](https://github.com/krishna310301/cloudops-sre-platform) · [Validation Evidence](https://github.com/krishna310301/cloudops-sre-platform/tree/main/docs/evidence/aws-validation-2026-07-25) · [Architecture](https://github.com/krishna310301/cloudops-sre-platform/blob/main/docs/architecture.md) · [Results](https://github.com/krishna310301/cloudops-sre-platform/blob/main/docs/results.md)
 
 ---
 
-### [Serverless Uptime Monitor](https://github.com/krishna310301/cloudops-uptime-monitor) &nbsp;<sub>`cloudops-uptime-monitor`</sub> — [**live**](https://d3hlcf532b9plq.cloudfront.net)
+### [GitOps Delivery Platform](https://github.com/krishna310301/cloudops-gitops-platform)
 
-A deployed Python/Lambda availability monitor with scheduled checks, state history, state-change alerting, and a CloudFront-hosted dashboard.
+EKS delivery platform using Git as the source of truth for environment promotion, reconciliation, and recovery.
 
-- Deployed a **53-resource serverless stack** with Lambda, EventBridge, DynamoDB, API Gateway, SNS/SQS, S3, CloudFront, KMS, CloudWatch, X-Ray, and Terraform
-- Modeled a latest-status access pattern that reads **10 current rows instead of scanning 86,400 retained records** in the reference workload, holding dashboard-read cost constant as history grows
-- Hardened target handling against SSRF and redirect-based time-of-check/time-of-use bypasses; added API throttling, KMS encryption, dead-letter queues, and point-in-time recovery
-- Published **9 application-level CloudWatch metrics** and validated stateful alerting through an outage drill with **1-second detection, 26-second dashboard visibility, and zero duplicate DOWN alerts**
+- Built GitOps delivery across **dev, staging, and prod** using Argo CD, Helm, EKS, ECR, Terraform, and GitHub Actions
+- Used **GitHub OIDC** and immutable ECR images for promotion without storing long-lived AWS credentials
+- Applied namespace-scoped **RBAC, ResourceQuotas, and NetworkPolicies** to define environment boundaries
+- Validated Argo CD self-healing after manual replica drift and restored a deliberately broken staging release through **Git revert**
 
-**Tech:** AWS · Python · Lambda · DynamoDB · API Gateway · EventBridge · SNS/SQS · S3 · CloudFront · KMS · X-Ray · CloudWatch · Terraform · GitHub Actions · Bandit · Checkov
+**Tech:** AWS · EKS · Argo CD · Terraform · Helm · GitHub Actions · OIDC · ECR · Docker · Prometheus · Grafana
 
-**Evidence:** [Live Dashboard](https://d3hlcf532b9plq.cloudfront.net) · [Repository](https://github.com/krishna310301/cloudops-uptime-monitor) · [Failure Drill](https://github.com/krishna310301/cloudops-uptime-monitor/blob/main/docs/failure-drill.md) · [Design Tradeoffs](https://github.com/krishna310301/cloudops-uptime-monitor/blob/main/docs/design-tradeoffs.md) · [Security Notes](https://github.com/krishna310301/cloudops-uptime-monitor/blob/main/docs/security.md)
+**Explore:** [Repository](https://github.com/krishna310301/cloudops-gitops-platform) · [AWS Validation](https://github.com/krishna310301/cloudops-gitops-platform/blob/main/docs/aws-validation-results.md) · [Promotion Workflow](https://github.com/krishna310301/cloudops-gitops-platform/blob/main/docs/promotion-workflow.md) · [Rollback Demo](https://github.com/krishna310301/cloudops-gitops-platform/blob/main/docs/rollback-demo.md)
+
+---
+
+### [Serverless Uptime Monitor](https://github.com/krishna310301/cloudops-uptime-monitor) — [**Live Dashboard**](https://d3hlcf532b9plq.cloudfront.net)
+
+Serverless AWS availability monitor with scheduled checks, state-change alerting, retained history, observability, and a live dashboard.
+
+- Built the platform with **Lambda, EventBridge, DynamoDB, API Gateway, SNS, CloudWatch, CloudFront, and Terraform**
+- Redesigned latest-status access to read **10 current-state records instead of scanning 86,400 retained records** for the documented 10-URL/30-day reference workload
+- Hardened outbound URL checks against **SSRF**, including unsafe DNS resolution and redirect destinations
+- Validated the complete outage path in AWS: **1-second observed failure detection, DOWN visible on the dashboard within 26 seconds, no duplicate DOWN alert on the repeated failure check, and verified recovery notification**
+
+**Tech:** AWS · Python · Lambda · DynamoDB · EventBridge · API Gateway · SNS · CloudWatch · CloudFront · Terraform · GitHub Actions
+
+**Explore:** [Live Dashboard](https://d3hlcf532b9plq.cloudfront.net) · [Repository](https://github.com/krishna310301/cloudops-uptime-monitor) · [Failure Drill](https://github.com/krishna310301/cloudops-uptime-monitor/blob/main/docs/failure-drill.md) · [Engineering Metrics](https://github.com/krishna310301/cloudops-uptime-monitor/blob/main/docs/metrics.md)
 
 ---
 
@@ -90,43 +90,44 @@ A deployed Python/Lambda availability monitor with scheduled checks, state histo
 
 ### [AWS Incident Triage Pipeline](https://github.com/krishna310301/aws-incident-triage-pipeline)
 
-An event-driven incident-response workflow in which CloudWatch and SNS invoke a Python Lambda that assigns deterministic severity, generates remediation-focused summaries through Bedrock, and falls back to structured notifications when model output is unavailable. Terraform provisions the workflow; GitHub Actions runs Python unit tests, Bandit, Checkov, and IaC validation.
+Python/AWS incident-response workflow that processes CloudWatch alarms through Lambda, assigns deterministic severity, generates remediation-focused summaries with Amazon Bedrock, and falls back to structured notifications when AI output is unavailable.
 
----
-
-## Technical Stack
-
-| Area | Tools |
-|---|---|
-| **AWS** | EC2, VPC, EKS, ECR, Lambda, API Gateway, RDS, DynamoDB, S3, CloudFront, SNS, SQS, EventBridge, KMS, Secrets Manager, IAM, ALB, NAT Gateway, CloudWatch, X-Ray, Budgets |
-| **IaC & Delivery** | Terraform modules and lifecycle, Helm, Kubernetes, Docker, Argo CD, GitOps, GitHub Actions, CI/CD, AWS CLI, Checkov, kubeconform |
-| **Security & Access** | IAM roles and policies, IRSA, OIDC federation, RBAC, Pod Security, Network Policies, KMS encryption, secrets management, SSRF input validation |
-| **Observability** | Prometheus, Grafana, CloudWatch Logs/Alarms/Dashboards, recording rules, SLIs/SLOs, burn-rate alerting, HPA, X-Ray, k6 |
-| **Systems & Networking** | Linux, TCP/IP, HTTP/S, DNS, BGP, MPLS, DWDM, subnetting, routing, load balancing, firewalls |
-| **Languages & Data** | Python, Bash, SQL, PostgreSQL, DynamoDB, FastAPI, Git |
+**Tech:** Python · Lambda · CloudWatch · SNS · Bedrock · Terraform · GitHub Actions
 
 ---
 
 ## Production Operations Background
 
-### Tata Communications — Senior Engineer, Network Operations Center (Shift Lead)
+### Tata Communications — Senior Engineer, Network Operations Center · Shift Lead
 *July 2022 – July 2024 · Pune, India*
 
-- Led five-engineer shifts in a 24/7 carrier NOC, coordinating triage for **40+ daily incidents across 25–30 Tier-1 clients** and prioritizing concurrent P1/P2 outages against 99.9% availability and four-hour restoration commitments
-- Diagnosed BGP/MPLS routing failures, TCP/IP faults, DWDM impairments, and hardware failures across Juniper, Huawei, Ciena, and Alcatel infrastructure
-- Directed incident restoration through ServiceNow, coordinating vendor TAC escalation, field dispatch, customer-premises testing, and client communication
-- Produced post-incident RCAs and cross-shift handoffs that preserved diagnostic context and supported recurrence prevention; earned a **Certificate of Excellence** for resolving an escalated customer incident
+- Led five-engineer shifts in a 24/7 NOC, prioritizing **40+ daily incidents across 25+ Tier-1 carrier clients** while supporting 99.9% availability targets and four-hour restoration SLAs
+- Led P1/P2 incident response across BGP/MPLS, TCP/IP, DNS, DWDM, and hardware faults while coordinating vendor TAC, field teams, customer testing, and client communication
+- Executed planned network changes with pre/post validation and rollback procedures
+- Authored runbooks, post-incident RCAs, and standardized shift handoffs; earned a **Certificate of Excellence** for resolving an escalated customer case
 
 ---
 
-## Education and Certification
+## Technical Toolkit
 
-- **[AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/97f0c690-8ec1-4a22-b1d1-7d33ae91a1c5/public_url)** — Amazon Web Services, July 2026
-- **MS, Computer Science** — Indiana University Bloomington, May 2026
+| Area | Technologies |
+|---|---|
+| **Cloud & IaC** | AWS, Terraform, VPC, EC2, EKS, Lambda, RDS, DynamoDB, S3, IAM |
+| **Containers & Delivery** | Kubernetes, Docker, Helm, Argo CD, GitHub Actions, GitOps, CI/CD, ECR |
+| **Observability & Reliability** | Prometheus, Grafana, CloudWatch, SLIs/SLOs, burn-rate alerting, k6 |
+| **Systems & Automation** | Linux, Python, Bash, Git, SQL |
+| **Networking & Security** | TCP/IP, DNS, BGP, MPLS, OIDC, RBAC, NetworkPolicies, Secrets Manager |
+
+---
+
+## Education & Certification
+
+- **[AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/97f0c690-8ec1-4a22-b1d1-7d33ae91a1c5/public_url)** — Amazon Web Services, 2026
+- **MS, Computer Science** — Indiana University Bloomington, 2026
 - **B.Tech, Computer Science and Engineering** — SRM Institute of Science and Technology, 2022
 
 ---
 
 <div align="center">
-<sub>Every quantitative claim above links to supporting code, test results, or validation evidence.</sub>
+<sub>Project repositories include architecture notes, validation records, runbooks, and documented tradeoffs.</sub>
 </div>
